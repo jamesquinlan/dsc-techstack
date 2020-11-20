@@ -1,4 +1,6 @@
+The Unix shell is a command line interface (CLI) using a terminal.  
 
+There are several shell renditions starting with the Thompson shell, ```sh```.  Others include Bourne shell ```sh```, C shell ```csh```, and Korn shell ```zsh```.  Two popular shells are the Bourne Again Shell ```bash``` and the Z shell ```zsh```.     
 
 ## Basic Commands
 
@@ -12,8 +14,6 @@ List contents of directory.  The syntax for the ls command is:
 ```
 ls [options] [names]
 ```
-
-__Example__: ```ls -l```
 
 | Option | Description |
 |:------ | :----------- |
@@ -38,4 +38,14 @@ __Example__: ```ls -l```
 | -t	| Displays newest files first. (based on timestamp) |
 | -u    | Displays files by the file access time|
 | -x    | Displays files as rows across the screen|
-| -1    | Displays each entry on a line|
+| -1    | Displays each entry on a line |
+|
+
+__Example__: ```ls -l```
+
+---------------
+
+
+
+
+
