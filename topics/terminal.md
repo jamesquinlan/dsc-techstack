@@ -1,6 +1,9 @@
+# The Unix Shell
+
 The Unix shell is a command line interface (CLI) using a terminal.  
 
 There are several shell renditions starting with the Thompson shell, ```sh```.  Others include Bourne shell ```sh```, C shell ```csh```, and Korn shell ```zsh```.  Two popular shells are the Bourne Again Shell ```bash``` and the Z shell ```zsh```.     
+
 
 ## Basic Commands
 
