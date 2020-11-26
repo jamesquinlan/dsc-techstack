@@ -2,20 +2,25 @@
 
 The Unix shell is a command line interface (CLI) using a terminal.  
 
-There are several shell renditions starting with the Thompson shell, ```sh```.  Others include Bourne shell ```sh```, C shell ```csh```, and Korn shell ```zsh```.  Two popular shells are the Bourne Again Shell ```bash``` and the Z shell ```zsh```.     
+![zsh Terminal Window](images/terminal.png)
+
+
+There are several shell renditions starting with the Thompson shell, __sh__.  Others include Bourne shell __sh__, C shell __csh__, and Korn shell __zsh__.  Two popular shells are the Bourne Again Shell __bash__ and the Z shell __zsh__.  
+
+Although most shell commands are the same, there are some differences.  The commands presented below assume the Z-shell.  
 
 
 ## Basic Commands
 
 Print Working Directory
 ```
-pwd
+$ pwd
 ```
 
 List contents of directory.  The syntax for the ls command is:
 
 ```
-ls [options] [names]
+$ ls [options] [names]
 ```
 
 | Option | Description |
@@ -46,9 +51,33 @@ ls [options] [names]
 
 __Example__: ```ls -l```
 
----------------
+
+---
+
+
+## Package manager
+
+
+---
+
+
+## Permissions
 
 
 
 
 
+---
+
+
+
+## Exercises
+
+1. Open terminal window and navigate to your home directory.
+
+2. List the files and folders in your home directory.
+
+3. Create a new directory called `dsc227`.   
+    a. Create a new text file, `test.txt`.  
+    b. Rename this file, `tests.txt` and copy it to the `dsc227` folder.
+    c. Remove the original file.   
