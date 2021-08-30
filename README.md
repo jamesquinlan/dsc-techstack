@@ -1,1 +1,37 @@
-# survey-software-datasci
+# DSC-TECHSTACK
+
+TechStack topics for data scientists.  List of topics (see topics folder) is not exhaustive.  Course inspired by (i) a summer course run by [Dr. Ed Overman at Ohio State University](https://math.osu.edu/people/overman.2) and (ii) [MIT - The Missing Semester](https://missing.csail.mit.edu).
+
+## Course description
+
+  This course facilitates the development of proficiency with the tools of computational and data science. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include but are not limited to the command-line, the use of text editors, and version control systems. Mastering such tools enables one to be more efficient at the problem-solving process and provides unique knowledge and skills.
+
+
+## Learning Outcomes
+At the conclusion of this course students will be able to:
+
+* navigate file directory from the command-line;
+* add, remove, and rename files and directories at the CLI;
+* clone a repository; add, commit, and push files to repository; create a pull request;
+* typeset mathematics;
+* develop professional profile;
+* create, edit, and save text files;
+* obtain data from website via webscraping;
+* visualize and manipulate geometrical objects;
+* perform basic data manipulations using R;
+* differentiate and integrate functions unable to do by hand; 
+* examine computer security and privacy issues.
+
+
+## Topics
+
+1. [VIM](topics/vim.md)
+2. [Git](topics/git.md)
+3. [GitHub](topics/github.md)
+4. [Virtualization](topics/vm.md)
+5. [Unix](topics/unix.md)
+6. [R](topics/r.md)
+7. [---](topics/xxx.md)
+8. [AWS](topics/aws.md)
+9. [LaTeX](topics/latex.md)
+10. [Privacy and Security](topics/vpn.md)
