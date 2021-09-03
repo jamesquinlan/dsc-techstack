@@ -87,6 +87,11 @@ After installing, start Oracle VM VirtualBox by:
 - VirtualBox Manager window will appear. See Figure 1
 
 
+#### Online User Manual
+
+[https://www.virtualbox.org/manual/UserManual.html#Introduction](https://www.virtualbox.org/manual/UserManual.html#Introduction)
+
+
 
 
 
@@ -132,24 +137,26 @@ Select: name (make it meaningful), directory location of VMs, guest OS, and RAM 
 
 
 
+## Other Vitural Machine Software
+* VMware
+* Parallels (macOS)
+* QEMU
+* Citrix Hypervisor
+* Microsoft Hyper-V
 
 
 
-
-#### Online User Manual
-
-https://www.virtualbox.org/manual/UserManual.html#Introduction
 
 
 
 
 ## YouTube Videos Covering VM
 
-[Beginner Guide 3 minutes](https://www.youtube.com/watch?v=yIVXjl4SwVo)
-[NexGenT - What is Virtualization?](https://www.youtube.com/watch?v=L8A9PHeyRrY)
-[Network Chuck](https://www.youtube.com/watch?v=wX75Z-4MEoM)
-[How to Use VirtualBox - Beginners Guide](https://www.youtube.com/watch?v=sB_5fqiysi4)
-[Containers vs VMs: What's the difference?](https://www.youtube.com/watch?v=cjXI-yxqGTI)
+- [Beginner Guide 3 minutes](https://www.youtube.com/watch?v=yIVXjl4SwVo)
+- [NexGenT - What is Virtualization?](https://www.youtube.com/watch?v=L8A9PHeyRrY)
+- [Network Chuck](https://www.youtube.com/watch?v=wX75Z-4MEoM)
+- [How to Use VirtualBox - Beginners Guide](https://www.youtube.com/watch?v=sB_5fqiysi4)
+- [Containers vs VMs: What's the difference?](https://www.youtube.com/watch?v=cjXI-yxqGTI)
 
 
 
