@@ -3,7 +3,20 @@
 UNIX is a multiuser, multitasking operating system developed in the 1970s by Bell Labs.  Licensed in 1975, UC Berkeley made enhancements and called it BSD (Berkeley Software Distribution) and distributed it to universities.   
 
 
+## UNIX philosophies
 
+* Do one thing and do it well - Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
+
+* Everything is file - Ease of use and security is offered by treating hardware as a file.
+
+* Store data and configuration in flat text files - Text file is a universal interface. Easy to create, backup and move to another system.
+
+* Use shell scripts to increase leverage and portability - Use shell script to automate common tasks across various UNIX / Linux installations.
+
+* Chain programs together to complete complex task - Use shell pipes and filters to chain small utilities that perform one task at time.
+
+* Choose portability over efficiency.
+* Keep it Simple, Stupid (KISS).
 
 
 
@@ -45,6 +58,15 @@ Although most shell commands are the same, there are some differences.  The comm
 
 
 ## Basic Commands
+
+Three parts to a command:
+1. The command
+2. Options that typically start with a - or --
+3. Argument
+
+
+
+
 
 Print Working Directory
 ```
@@ -98,9 +120,6 @@ $ ls -a
 
 
 
-
-
-
 ## Change Directory
 ```
 $ cd path
@@ -133,7 +152,13 @@ Each number is binary.  $111_2 = 7$  1 = on, 0 = off.
 chmod 740 filename
 ```
 
+```
+# Set execute permission
+chmod 0755 script.sh
 
+# Allow only the owner to execute
+chmod 0700 script.sh
+```
 
 ## Make Directory
 ```
@@ -242,6 +267,16 @@ Each shell has several important environment variables necessary for everyday us
 
 
 
+
+View all files in your home directory.
+```
+ls -a $HOME
+```
+
+
+
+
+
 ## Symbolic Link
 A symbolic link to a file in another directory (appeared in Version 1 AT&T UNIX).  That is, frequently you need to refer to a file in another directory. Do NOT copy this file to the directory, instead link to the file so as to have ONE copy (saves disk space and version control).
 
@@ -279,6 +314,13 @@ In 1991, a second year Copmuter Science student at University of Helsinki, Linus
 
 
 
+Other useful commands
+```
+tree
+clear
+date
+ping google.com
+```
 
 
 

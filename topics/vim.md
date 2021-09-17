@@ -80,3 +80,70 @@ Save changes and quit editor with the  command:
 :help [topic]
 :help modes
 ```
+
+
+
+
+
+# Essential Vi Commands
+Open a file:
+```
+vi filename
+```
+
+
+To go into edit mode: press ESC and type I
+
+
+To go into command mode: press ESC
+
+To save a file press ESC and type 
+```
+:w fileName
+```
+
+To save a file and quit: press ESC and type
+```
+:wq
+```
+
+OR
+
+press ESC and type `:x`
+
+
+To jump to a line:
+press ESC and type `:the_line_number`
+
+
+
+
+To Search for a string:
+Press ESC and type `/wordToSearch`
+
+
+
+To quit vi:
+Press ESC and type :q
+Save the following into a file called hello.sh:
+
+```
+#!/bin/bash
+echo "Hello, World!" 
+echo "Knowledge is power."
+```
+
+Save and close the file. You can run the script as follows:
+```
+ ./hello.sh
+ ```
+
+
+
+Saving and Running Your Script
+The command ./hello.sh displayed an error message on the screen. It will not run script since you've not set execute permission for your script hello.sh. To execute this program, type the following command:
+
+```
+chmod +x hello.sh
+./hello.sh
+```
