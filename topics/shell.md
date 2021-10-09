@@ -16,7 +16,8 @@ UNIX is a multiuser, multitasking operating system developed in the 1970s by Bel
 * Chain programs together to complete complex task - Use shell pipes and filters to chain small utilities that perform one task at time.
 
 * Choose portability over efficiency.
-* Keep it Simple, Stupid (KISS).
+
+* Keep it Simple.
 
 
 
@@ -39,20 +40,20 @@ The __file__ is the unit of storage in UNIX.  A __directory__ (_folder_ in moder
 
 # The Unix Shell
 
-The shell is a command line interface (CLI)  with the UNIX system — the middleman between you and the kernel. It accepts a command, interprets the command, executes the command, and then waits for another command. The shell displays a prompt to notify you that it is ready to accept your command. This prompt will probably look something like
+The shell is a command line interface (CLI)  with the UNIX system — the middleman between you and the kernel. It accepts a command, interprets the command, executes the command, and then waits for another command. The shell displays a prompt to notify you that it is ready to accept your command. This prompt in the shell window  looks something like: 
 
 
 ![zsh Terminal Window](images/shell.png)
 
 
-There are several shell renditions starting with the Thompson shell, __sh__.  Others include Bourne shell __sh__, C shell __csh__, and Korn shell __zsh__.  Two popular shells are the Bourne Again Shell __bash__ and the Z shell __zsh__.  
+There are several shell renditions starting with the (Ken) Thompson shell, the first shell Bell Laboratories (1971).  Others include Bourne shell (__sh__), C shell (__csh__), and Korn shell (__ksh__).  Two very popular shells are the Bourne _Again_ Shell (__bash__) and the Z shell (__zsh__).  
 
 Although most shell commands are the same, there are some differences.  The commands presented below assume the Z-shell.  
 
 
 ```
-% echo $SHELL
-% echo "${ZSH_VERSION}"
+echo $SHELL
+echo "${ZSH_VERSION}"
 ```
 
 
@@ -67,13 +68,25 @@ Three parts to a command:
 
 
 
+## Getting Help
+```
+man [command]
+```
 
-Print Working Directory
+
+
+
+
+# Directory Commands
+
+### Print Working Directory
 ```
 $ pwd
 ```
 
-List contents of directory.  The syntax for the ls command is:
+### List contents of directory.  
+
+The syntax for the ls command is given below. 
 
 ```
 $ ls [options] [names]
@@ -105,19 +118,14 @@ $ ls [options] [names]
 | -1    | Displays each entry on a line |
 
 
-__Example__: ```ls -l```
-
-
-
-
-## "Dot" files - Hidden files
-
-Dot files are typically configuration files and by default are hidden.  To view _all_ files in a directory, 
+__Example__: Dot files are typically configuration files and by default are hidden.  To view _all_ files in a directory, 
 
 ```
 $ ls -a
-```
+```  
 
+
+ 
 
 
 ## Change Directory
@@ -127,17 +135,60 @@ $ cd path
 
 
 
-
-
-
-## Package manager
+## Make Directory
 ```
-apt-get
-yum
-zypper
-pacman
-brew
+$ mkdir name_new_folder
 ```
+
+
+### Rename directory
+```
+$ mv olddirectory newdirectoryname
+```
+
+### Remove directory
+
+```
+rmdir directoryname
+rm -r directoryName
+```
+
+
+
+
+# File Commands: move, copy, rename, and remove
+
+
+
+## Remove file
+ `-f` option can be dangerous.
+
+```
+$ rm filename
+$ rm -i filename
+$ rm -f filename 
+```
+
+
+
+## Copy files
+
+```
+$ cp source_file target_file 
+$ cp source_file target_directory
+```
+
+## Move (or rename) files
+Instead of clicking and dragging, move it.
+
+```
+$ mv source_file target_directory
+$ mv -i existing newfile
+$ mv chap*.pdf Directory/
+```
+
+
+
 
 ---
 
@@ -160,56 +211,25 @@ chmod 0755 script.sh
 chmod 0700 script.sh
 ```
 
-## Make Directory
-```
-$ mkdir name_new_folder
-```
-
-## Copy files
-
-```
-$ cp source_file target_file 
-$ cp source_file target_directory
-```
-
-## Move (or rename) files
-Instead of clicking and dragging, move it.
-
-```
-$ mv source_file target_directory
-$ mv -i existing newfile
-$ mv chap*.pdf Directory/
-```
-
-### Rename directory
-```
-$ mv olddirectory newdirectoryname
-```
-
-### Remove directory
-
-```
-rmdir directoryname
-rm -r directoryName
-```
-
-## Remove file
- `-f` option can be dangerous.
-
-```
-$ rm filename
-$ rm -i filename
-$ rm -f filename 
-```
-
----
 
 
 
-## Getting Help
+
+
+## Package managers
+
+Package managers handle processes for a computer's operating system including installing, upgrading, configuring, and removing computer programs.  Depending on your distribution (e.g., Arch Linux (pacman), macOS (brew), Debian (apt), common package managagers include:
+
 ```
-man [command]
+apt
+yum
+zypper
+pacman
+brew
 ```
+
+
+
 
 ## cat
 The cat command shows the contents of file on the screen.
