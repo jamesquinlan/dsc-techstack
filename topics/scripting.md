@@ -20,7 +20,8 @@ Three words: __repetitive task automation__.
 
 - Find out information about local or remote servers.
 - Creating a project folder and populating the files
-- Find out all failed login attempt, if login attempt are continue repeatedly from same network IP automatically block all those IPs accessing your network/service via firewall.
+- Find out all failed login attempt, if login attempt are continue repeatedly from same network IP 
+	automatically block all those IPs accessing your network/service via firewall.
 
 
 
@@ -72,6 +73,8 @@ echo "Users currently on the machine, and their processes:"
 # w = display who is logged in and what they are doing
 w  
 ```
+
+> Set permissions `chmod +x filename.zsh` and run `./filename.zsh`
 
 
 
