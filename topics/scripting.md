@@ -75,10 +75,70 @@ w
 
 
 
+## If-THEN-ELSE
+```
+#!/bin/zsh
+
+echo -n "Enter a number: "
+read x
+if [[ $x -gt 100 ]]
+then
+	echo "$x is greater than 100"
+else
+	pwd
+fi
+
+date
+```
 
 
 
-__Example__: Wordpress Naked Theme 
+## Loops
+
+```
+#!/bin/zsh
+for i in 1 2 3 4
+do
+	echo "value of i is $i"
+done
+```
+
+```
+#!bin/zsh
+for i in 1 2 3 4
+do
+	echo "value of i is $i"
+done
+```
+
+```
+#!/bin/zsh
+INPUT_STRING=hello
+while [ "$INPUT_STRING" != "bye" ]
+do
+	echo "Enter file name (or 'bye' to quit)"
+	read INPUT_STRING
+	echo "You typed: $INPUT_STRING"
+	touch $INPUT_STRING.txt
+done
+```
+
+
+
+## Update and Upgrade Automation
+
+```
+#!/bin/zsh
+
+set -e
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+```
+
+
+
+__Exercise__: (Wordpress Naked Theme) Write a script that will create the file structure below. 
 
 ```
 404.php
