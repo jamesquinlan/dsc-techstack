@@ -106,13 +106,7 @@ do
 done
 ```
 
-```
-#!bin/zsh
-for i in 1 2 3 4
-do
-	echo "value of i is $i"
-done
-```
+ 
 
 ```
 #!/bin/zsh
