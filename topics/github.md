@@ -259,6 +259,12 @@ You can also see many other data from the repository, including past **commits**
 
 
 
+### 3.2.1 Pushing a new branch
+
+```
+git push --set-upstream origin NEW_BRANCH_NAME
+```
+
 
 
 
