@@ -561,7 +561,58 @@ After adding information about your changes, you can finally send a new pull req
 
 
 
-### Removing files from Githum
+
+
+
+# 6. Renaming branches
+
+To rename your branch from `master` to `main`:
+
+1. Log into github.com
+2. Select view all branches
+3. Click pencil icon to rename
+4. To update the local clone branch, run the following:
+
+
+The following is provided by GitHub after renaming branch on GitHub.com.
+```zsh
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
+
+You can also delete master branch on remote from the terminal:
+```zsh
+# delete the master branch on the remote
+git push origin --delete master
+```
+
+
+
+## Changing repository name on GitHub
+
+If you change the name of your repo on GitHub, you will get the following message locally when pushing files to the remote
+
+```zsh
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/username/new-repo.git
+To https://github.com/username/old-repo.git
+```
+
+To fix this, enter the commands, 
+
+```zsh
+git remote set-url origin [updated link url https://........git]
+
+
+# Alternatively, if you like the long way it is:
+git remote rm origin
+git remote add origin [updated link]
+
+```
+
+### Removing files from Github
 
 http://www.kaidez.com/remove-files-from-github/
 
@@ -569,7 +620,7 @@ http://www.kaidez.com/remove-files-from-github/
 
 
 
-# 6. Concluding remarks
+# 7. Concluding remarks
 
 GitHub offers the possibility to have a centralized remote repository when using Git with our project. We can publish our projects and efficiently work with other developers and teams using GitHub. We can also browse all the available open-source projects on GitHub, use them to create our projects or contribute to someone else's project.
 
