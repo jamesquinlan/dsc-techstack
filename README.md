@@ -4,7 +4,7 @@ TechStack topics for data scientists.  List of topics (see topics folder) is not
 
 ## Course description
 
-  This course facilitates the development of proficiency with the tools of computational and data science. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include but are not limited to the command-line, the use of text editors, and version control systems. Mastering such tools enables one to be more efficient at the problem-solving process and provides unique knowledge and skills.
+This course facilitates the development of proficiency with the tools of computational and data science. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include but are not limited to the command-line, the use of text editors, and version control systems. Mastering such tools enables one to be more efficient at the problem-solving process and provides unique knowledge and skills.
 
 
 ## Learning Outcomes
@@ -38,3 +38,7 @@ At the conclusion of this course students will be able to:
 11. [Markdown](topics/markdown.md)
 12. [LinkedIn](topics/linkedin.md)
 13. [Desmos](topics/desmos.md)
+
+---
+
+
