@@ -211,10 +211,32 @@ If you wanted, you could initialize the repository with a **README** file, which
 
 
 
+### Create a new repository on the command line (Local to remote initialization)
+
+
+Add a new repository in GitHub and then in the folder on your computer that you want to upload to GitHub run the following commands (changing my_username and my_project to your situation):
 
 
 
+```
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/my_username/my_project.git
+git push --set-upstream origin main
+```
 
+Github suggests:
+
+```
+echo "# enaj" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jamesquinlan/enaj.git
+git push -u origin main
+```
 
 
 
@@ -237,7 +259,7 @@ Therefore, switch back to your local terminal and run the specified commands fro
 
 ```zsh
 git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-git push -u origin master
+git push -u origin main
 ```
 
 When you run the **git push** command, you will be prompted to enter your GitHub username and password to log in to your GitHub account from the terminal.
@@ -293,7 +315,7 @@ git commit -m "Change greeting"
 Then, push your updated local repository to the remote GitHub repository with this command:
 
 ```zsh
-git push origin master
+git push origin main
 ```
 
 After that, when you navigate back to your remote repository page on [github.com](http://github.com), you should see the updated code and one more **commit** in the list.
@@ -353,9 +375,9 @@ You can also clone public GitHub repositories from other developers using the sa
 
 # 4. Branching and merging
 
-The general rule is that the **master** branch of your GitHub repository should always contain working and stable code. However, you may want to also push some code that you are currently working on, which may be unstable or not fully tested. Usually, that happens when you are adding a new feature to your code, but still want to push that code to GitHub.
+The general rule is that the **main** branch of your GitHub repository should always contain working and stable code. However, you may want to also push some code that you are currently working on, which may be unstable or not fully tested. Usually, that happens when you are adding a new feature to your code, but still want to push that code to GitHub.
 
-We can create a separate copy of our project code with branching without touching the **master** branch that holds our stable code. Instead, we can make a new branch that creates a different version of our code, which we can then implement our feature. Then, when we fully integrate and test our new feature, we can merge it back to our **master** branch.
+We can create a separate copy of our project code with branching without touching the **main** branch that holds our stable code. Instead, we can make a new branch that creates a different version of our code, which we can then implement our feature. Then, when we fully integrate and test our new feature, we can merge it back to our **main** branch.
 
 
 
@@ -363,7 +385,7 @@ We can create a separate copy of our project code with branching without touchin
 
 ## 4.1. Pushing a branch to GitHub
 
-So, when we are working on code modifications or a new feature locally, we usually want to create a new branch for that feature. We do not make changes directly on the main **master** branch, which should only contain stable code.
+So, when we are working on code modifications or a new feature locally, we usually want to create a new branch for that feature. We do not make changes directly on the main **main** branch, which should only contain stable code.
 
 For example, if we wanted to add a new file to our **hello-world** project, you can switch to a new branch by typing this from the project folder:
 
@@ -414,9 +436,9 @@ If you refresh the **hello-world** GitHub repository page, you will see that the
 
 ## 4.2. Creating a Pull Request (PR)
 
-We create a pull request to notify the project owner (or the team leader) that we want to implement changes from our custom branch to the main **master** branch.
+We create a pull request to notify the project owner (or the team leader) that we want to implement changes from our custom branch to the main **main** branch.
 
-The pull request will allow developers to review and verify the changes before allowing them to be applied to the **master** branch, which usually only holds the **stable** version of our code.
+The pull request will allow developers to review and verify the changes before allowing them to be applied to the **main** branch, which usually only holds the **stable** version of our code.
 
 To create a pull request, we need to press the following button (from the same interface shown in the last screenshot):
 
@@ -430,13 +452,13 @@ To submit your pull request, click the green **'Create pull request'** button, a
 
 After that is done, other collaborators can review the pull request, analyze the code changes directly, and add their comments about the pull request.
 
-When the changes from the request are reviewed by yourself (or other team members if you are not working alone), and they don't have any conflicts with the **master** base branch, then the pull request can be approved and merged:
+When the changes from the request are reviewed by yourself (or other team members if you are not working alone), and they don't have any conflicts with the **main** base branch, then the pull request can be approved and merged:
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/64f6f42b-fbad-4398-b67c-2cfd2d0805a9/approve_merge.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/64f6f42b-fbad-4398-b67c-2cfd2d0805a9/approve_merge.png)
 
-After you merge the pull request, it offers to delete the *new-feature* branch since the code is now added to the **master** branch.
+After you merge the pull request, it offers to delete the *new-feature* branch since the code is now added to the **main** branch.
 
-After a successful merge, you should see the **master** branch changes and the commits from the custom (*new-feature*) branch will also be added to the **master** branch.
+After a successful merge, you should see the **main** branch changes and the commits from the custom (*new-feature*) branch will also be added to the **main** branch.
 
 Keep in mind that the branch can have conflicts with the base branch in some scenarios, so the button may not be green. This happens where there is a change in a file that conflicts with a different file, so Git cannot automatically decide which version to use. In this situation, a developer may need to manually review the code and solve the conflicts to finalize the merge.
 
@@ -464,12 +486,12 @@ Check the following GitHub guides:
 
 After making changes or merging branches via pull requests on GitHub, the remote repository may look different from the local repository on your computer. To get the latest changes from the remote GitHub repository, we use the **git pull** command.
 
-When we are working on a team project which is hosted in a remote GitHub repository, we want to use the **git pull** command to get the latest version of the code in our **master** branch, which may have been updated by other developers in our team.
+When we are working on a team project which is hosted in a remote GitHub repository, we want to use the **git pull** command to get the latest version of the code in our **main** branch, which may have been updated by other developers in our team.
 
-If we associated the GitHub remote repository link to the **origin** alias (like we did in the **hello-world** repository example), then we can use the following command to pull any changes from the remote repository to the main **master** branch in our local project:
+If we associated the GitHub remote repository link to the **origin** alias (like we did in the **hello-world** repository example), then we can use the following command to pull any changes from the remote repository to the main **main** branch in our local project:
 
 ```zsh
-git pull origin master
+git pull origin main
 ```
 
 When we are up to date with the remote branch, we can then work to develop the project code further or add new features.
@@ -574,7 +596,8 @@ To rename your branch from `master` to `main`:
 4. To update the local clone branch, run the following:
 
 
-The following is provided by GitHub after renaming branch on GitHub.com.
+The following is provided by GitHub after renaming branch on GitHub.com.  If you have a local clone, you can update it by running the following commands.
+
 ```zsh
 git branch -m master main
 git fetch origin
@@ -582,11 +605,57 @@ git branch -u origin/main main
 git remote set-head origin -a
 ```
 
+ 
+
+> Note: the first line `git branch -m master main` renames local branch.  The general syntax (from the main branch) is `git branch -m old new`.
+
+
+
 You can also delete master branch on remote from the terminal:
 ```zsh
 # delete the master branch on the remote
 git push origin --delete master
 ```
+
+
+Here is another blob post providing directions on renaming the Local master Branch to main
+
+The first step is to rename the "master" branch in your local Git repositories:
+```zsh
+$ git branch -m master main
+```
+
+Let's quickly check if this has worked as expected:
+
+
+```zsh
+$ git status
+```
+
+On branch main
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+So far, so good! The local branch has been renamed - but we now need to make some changes on the remote repository as well!
+
+Renaming the Remote master Branch as Well
+
+In the second step, we'll have to create a new branch on the remote named "main" - because Git does not allow to simply "rename" a remote branch. Instead, we'll have to create a new "main" branch and then delete the old "master" branch.
+
+Make sure your current local HEAD branch is still "main" when executing the following command:
+
+
+```zsh
+$ git push -u origin main
+```
+
+
+We now have a new branch on the remote named "main". Let's go on and remove the old "master" branch on the remote:
+
+```zsh
+$ git push origin --delete master
+```
+
 
 
 

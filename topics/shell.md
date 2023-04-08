@@ -312,6 +312,13 @@ ln -s source_file myfile
 ```
 
 
+**Example** 
+To create a symbolic link to an binary program, e.g., Julia.
+
+```
+ln -s path/to/juila julia
+```
+
 
 
 
