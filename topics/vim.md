@@ -30,7 +30,7 @@ To ensure Vim is correctly installed execute below command −
 $ which vim
 ```
 
-Or yum install vim
+Or `yum install vim` with yum.
 
 
 
