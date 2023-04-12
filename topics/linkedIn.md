@@ -7,9 +7,6 @@ Quick facts:
 
 
 
-
-
-
 ## Profile Picture.
 
 First, you need profile picture.  The picture should be:
@@ -58,7 +55,7 @@ Services exist e.g., photofeeler.com  that will review your photo for:
 Update your headline to "sale" yourself.  By default, LinkedIn uses your Title. 
 Headline - text below your name (advertise yourself)
 	- default is job title
-- Job Title + company name + keywords + Zing factor (conversation starter)
+	- Job Title + company name + keywords + Zing factor (conversation starter)
 
  
 
@@ -119,5 +116,46 @@ Edit your profile, get your linkedIn url.
 
 
 
-https://www.youtube.com/watch?v=zd4ALKv8Das
+<!-- https://www.youtube.com/watch?v=zd4ALKv8Das -->
+
+
+## Assignment Exercises
+
+
+
+This assignment covers the basics of creating a LinkedIn profile, including adding personal information, work experience, skills, and connecting with others. It also highlights the importance of keeping your profile up to date and staying engaged with your network. Good luck with your profile creation and updates!
+
+
+1. Sign up for LinkedIn if you haven't already.
+
+2. Complete your profile by filling out your personal information, education, work experience, skills, and other relevant details.
+
+3. Add a professional profile photo and a background photo that reflects your personal brand.
+
+
+4. Write a compelling headline that summarizes your skills and experience.
+
+5. Craft a summary section that highlights your professional achievements and aspirations.
+
+
+6. Add at least 3 relevant work experiences, highlighting your roles and responsibilities, and quantifying your achievements whenever possible.
+
+
+7. Add at least 5 relevant skills that you possess, based on your experience and strengths.
+
+8. Connect with colleagues, former colleagues, and people in your industry or field of work.
+
+
+9. Request recommendations from colleagues and supervisors for work you’ve done in the past.
+
+
+10. Join relevant LinkedIn groups to engage with people in your industry or field of work and stay up to date with the latest trends.
+
+
+Once you've completed your LinkedIn profile, make sure to keep it up to date with your latest accomplishments, skills, and work experience. Consider posting updates, publishing articles, or sharing relevant news in your industry to increase your visibility and network with other professionals.
+
+
+
+
+
 

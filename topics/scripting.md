@@ -157,3 +157,33 @@ assets
 	
 ```
 
+
+
+## Assignment Exercises
+
+This assignment covers the basics of creating and modifying shell scripts in zsh, including accepting command line arguments and using conditional statements to perform checks. Have fun experimenting with zsh shell scripting!
+
+
+1. Open a terminal window and navigate to a directory where you want to create your shell script.
+
+2. Create a new file with a .sh extension by typing `touch myscript.sh`.
+
+3. Open the file in a text editor by typing nano myscript.sh.
+
+4. Write a script that prints "Hello, world!" to the terminal when executed.
+
+5. Save the script by pressing `Ctrl + X`, then `Y`, and then Enter.
+
+6. Make the script executable by typing `chmod +x myscript.sh`.
+
+7. Execute the script by typing `./myscript.sh` and verify that "Hello, world!" is printed to the terminal.
+
+8. Modify the script to accept a command line argument and print it to the terminal. For example, if the user enters `./myscript.sh John`, the script should print "Hello, John!" to the terminal.
+
+9. Save and execute the modified script to ensure it is working as expected.
+
+10. Add a conditional statement to the script that checks if a file named "output.txt" exists in the same directory as the script. If it does, the script should print "The file exists" to the terminal. If it does not, the script should print "The file does not exist".
+
+11. Save and execute the modified script to ensure it is working as expected.
+
+

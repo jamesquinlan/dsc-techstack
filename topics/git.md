@@ -706,9 +706,55 @@ git checkout
 ```
 
 
-# Additional Resources
+## Additional Resources
 
 https://www.notion.so/Introduction-to-Git-ac396a0697704709a12b6a0e545db049
 
 https://www.youtube.com/watch?v=USjZcfj8yxE&t=0s
+
+
+## Assignment Exercises
+
+This assignment covers the basics of using Git for version control, including creating a new repository, adding and committing files, creating and merging branches, cloning repositories, pushing and pulling changes, stashing changes, cherry-picking commits, creating tags, and using the blame command to track changes. Have fun exploring the power of Git!
+
+
+1. Create a new Git repository on your local machine using the `git init` command.
+
+2. Add a new file to the repository using a text editor of your choice.
+
+3. Use the `git add` command to stage the new file for commit.
+
+4. Use the `git commit` command to commit the new file with a descriptive message.
+
+5. Create a new branch using the `git branch` command.
+
+6.  Use the `git checkout` command to switch to the new branch.
+
+7. Modify the file you created earlier and save the changes.
+
+8. Use the `git add` and `git commit` commands to stage and commit the changes to the new branch.
+
+9. Switch back to the master branch using the `git checkout` command.
+
+10. Merge the changes from the new branch into the master branch using the git merge command.
+
+11. Use the `git log` command to view the commit history of the repository.
+
+12. Use the `git clone` command to clone the repository to a new directory on your local machine.
+
+13. Create a new file in the cloned repository and stage and commit the changes using the `git add` and `git commit` commands.
+
+14. Use the `git push` command to push the changes to a remote Git repository (e.g., on GitHub or GitLab).
+
+15. Use the `git pull` command to pull changes from the remote repository to your local repository.
+
+16. Use the `git fetch` command to fetch changes from the remote repository without merging them into your local repository.
+
+17. Use the `git stash` command to temporarily save changes that are not ready to be committed.
+
+18. Use the `git cherry-pick` command to apply a specific commit from one branch to another.
+
+19. Use the `git tag` command to create a new tag for a specific commit.
+
+20. Use the `git blame` command to view the commit history of a specific file line by line.
 

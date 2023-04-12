@@ -351,21 +351,36 @@ ping google.com
 
 
 
-## Exercises
+## Assignment Exercises
 
-1. Open terminal window and navigate to your home directory.
+This assignment covers the basics of using Unix shell commands to navigate directories, create, edit, copy, and delete files and directories. It also introduces the use of some commonly used commands such as `ls`, `cd`, `pwd`, `mkdir`, `touch`, `echo`, `cat`, `cp`, `rm`, and `rmdir`. Have fun exploring the power of Unix shell!
 
-2. List the files and folders in your home directory.
+1. Open a terminal window and navigate to your home directory.
 
-3. Create a new directory called `dsc227`.   
-    a. Create a new text file, `test.txt`.  
-    b. Rename this file, `tests.txt` and copy it to the `dsc227` folder.
-    c. Remove the original file.  
+2. Use the `ls` command to list the files and directories in your home directory.
 
-4. List all the files (including hidden) in your home directory.
+3. Use the `cd` command to navigate to a subdirectory of your choice.
 
-5. Create an alias (`ll`) for the "list all" command.
+4. Use the `ls` command again to list the files and directories in the subdirectory.
 
-6. Change permissions of `tests.txt` to 777.  
+5. Use the `pwd` command to print the current working directory to the terminal.
 
-7. Create a symbolic link to this file in the `dsc227` directory. 
+6. Use the `mkdir` command to create a new directory named "mydir" in the current working directory.
+
+7. Use the `cd` command to navigate into the "mydir" directory.
+
+8. Use the `touch` command to create a new file named "myfile.txt" in the "mydir" directory.
+
+9. Use the `echo` command to add some text to the "myfile.txt" file.
+
+10. Use the `cat` command to print the contents of the "myfile.txt" file to the terminal.
+
+11. Use the `cp` command to make a copy of the "myfile.txt" file in the same directory and name it "myfile_copy.txt".
+
+12. Use the `rm` command to delete the original "myfile.txt" file.
+
+13. Use the `ls` command to verify that only "myfile_copy.txt" is now present in the directory.
+
+14. Use the `cd` command to navigate back to your home directory.
+
+15. Use the `rmdir` command to delete the "mydir" directory and its contents.

@@ -580,3 +580,51 @@ sollicitudin.  Praesent imperdiet mi necante...
 
 Sections, subsections and chapters are automatically included in the table of contents. To manually add entries, for example when you want an unnumbered section, use the command `\addcontentsline` as shown in the example.
 
+
+
+## Assignment Exercises
+
+This assignment covers the basics of creating a LaTeX document, including adding a title, author, and date, creating sections and subsections, emphasizing text, creating lists, and adding tables and equations. It also includes compiling the document and verifying the output. Have fun exploring the power of LaTeX!
+
+
+1. Open a LaTeX editor of your choice and create a new document.
+
+2. Add a title to the document using the `\title` command.
+
+3. Add an author to the document using the `\author` command.
+
+4. Add a date to the document using the `\date` command.
+
+5. Use the `\maketitle` command to create a title page for your document.
+
+6. Add a section heading to the document using the \section command.
+
+7. Add some text to the section using regular text mode.
+
+8. Add a subsection heading to the section using the \subsection command.
+
+9. Add some text to the subsection using regular text mode.
+
+10. Use the `\emph` command to emphasize some text in the subsection.
+
+11. Use the `\textbf` command to make some text bold in the subsection.
+
+12. Use the `\textit` command to make some text italicized in the subsection.
+
+13. Add a bullet list to the subsection using the `itemize` environment.
+
+14. Add a numbered list to the subsection using the `enumerate` environment.
+
+15. Add a table to the section using the `tabular` environment.
+
+16. Add an equation to the section using the `equation` environment.
+
+17. Save your LaTeX document as a `.tex` file.
+
+18. Compile your LaTeX document using your LaTeX compiler of choice.
+
+19. View your compiled document and make any necessary adjustments to your LaTeX code.
+
+20. Submit your completed LaTeX document along with a PDF of the compiled output.
+
+

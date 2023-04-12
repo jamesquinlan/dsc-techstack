@@ -347,8 +347,10 @@ you'll need these tools:
 
 
 
+## Assignment Exercises
 
-# Exercises
+This assignment covers some basic Vim commands and features, including searching, visual mode, cut and paste, saving and exiting, undo and redo, and replacing text. Good luck with your practice!
+
 
 1. Fix the following in [fizz buzz](https://en.wikipedia.org/wiki/Fizz_buzz):
 
@@ -359,4 +361,23 @@ you'll need these tools:
 - Hard-codes 10 instead of taking a command-line argument
 
 
-2. 
+2. Open a new file in Vim.
+
+3. Write some text in the file (it can be anything you like).
+
+4. Use the search feature to find a specific word or phrase in the text.
+
+5. Use the visual mode to select a block of text.
+
+6. Cut the selected text and paste it somewhere else in the file.
+
+7. Save the file and exit Vim.
+
+8. Open the file again and make some changes to the text.
+
+9. Use the undo and redo features to undo and redo your changes.
+
+10. Use the replace feature to replace a word or phrase with something else.
+
+11. Save the file and exit Vim.
+

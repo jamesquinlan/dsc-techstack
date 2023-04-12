@@ -181,4 +181,31 @@ There are many icons that can be displayed.  Here are a few  examples, a flower,
 To escape any markdown-sensitive character, place a backslash ( \\ ) before the character. For example, `\*escape\*` the astricks character.  If you want a backslash character, escape the backslash with double backslash ( \\\\ ).
 
 
+## Assignment Exercises
+
+This assignment covers the basics of Markdown syntax, including headings, lists, hyperlinks, images, blockquotes, and text formatting. It also highlights the importance of converting Markdown to HTML and viewing the output in a web browser to see how it's rendered. Good luck with your Markdown practice!
+
+
+1. Familiarize yourself with the basics of Markdown syntax by reading a tutorial (like above) or watching a video.
+
+2. Create a new Markdown document using a text editor (e.g., vim) to make notes on a topic of your choice. 
+
+
+3. Add a level one heading and a level two heading to the document.
+
+4. Create an ordered list with at least three items.
+
+5. Create an unordered list with at least three items.
+
+6. Add a hyperlink to a website of your choice.
+
+7. Add an image to the document and adjust its size.
+
+8. Create a blockquote with a relevant quote or message.
+
+8. Add emphasis to a word or phrase using bold or italic styling.
+
+10. Save the document and convert it to HTML using a Markdown converter tool.
+
+11, View the HTML output in a web browser to see how the Markdown syntax is rendered.
 

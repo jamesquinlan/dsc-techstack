@@ -95,3 +95,31 @@ and 'paste' (CTRL+V) into your LaTeX document.  For example, after copying the e
 will be `f\left(x\right)\ =\ \sqrt{x-1}`, thus can be used in your favorite LaTeX editor.  
 
 
+
+## Assignment Exercises
+
+This assignment covers the basics of using the Desmos graphing calculator to graph various types of equations and functions. It also highlights some of the advanced features of the calculator, such as sliders, zooming, animating, and sharing graphs. Have fun exploring the world of mathematical visualization with Desmos!
+
+
+1. Open the Desmos graphing calculator in your web browser.
+
+2. Enter a linear equation of your choice (e.g., `y = 2x + 1`) in the input field at the top of the screen and press enter to graph it.
+
+3. Modify the equation by changing the slope or y-intercept and observe how the graph changes.
+
+4. Graph a quadratic equation (e.g., `y = x^2 + 2x + 1`) by entering it into the input field and pressing enter.
+
+5. Use the sliders feature to adjust the coefficients of the quadratic equation and observe how the graph changes.
+
+6. Graph a trigonometric function (e.g., `y = sin(x)`) by entering it into the input field and pressing enter.
+
+7. Use the zoom feature to zoom in and out on the graph of the trigonometric function and observe how the graph changes.
+
+8. Graph a parametric equation (e.g., `x = sin(t), y = cos(t)`) by entering it into the input field and pressing enter.
+
+9. Use the animate feature to animate the graph of the parametric equation and observe how it changes over time.
+
+10. Share your favorite graph from your practice with a classmate and explain why you find it interesting or useful.
+
+
+
