@@ -3,8 +3,11 @@
 Desmos provides four calculators and a geometry tools.  The calculators are:
 
 1. Graphing Calculator
+
 2. Scientific Calculator
+
 3. Four Function Calculator
+
 4. Matrix Calculator
 
 In this brief article we will look at some common capabilities of the Graphing Calculator.
