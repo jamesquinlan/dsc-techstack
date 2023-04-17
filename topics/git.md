@@ -728,7 +728,7 @@ This assignment covers the basics of using Git for version control, including cr
 
 5. Create a new branch using the `git branch` command.
 
-6.  Use the `git checkout` command to switch to the new branch.
+6. Use the `git checkout` command to switch to the new branch.
 
 7. Modify the file you created earlier and save the changes.
 
