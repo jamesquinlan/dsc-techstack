@@ -38,8 +38,8 @@ This assignment covers some basic tasks with AWS Lightsail, including creating a
 
 
 * S3 = Simple Storage Service
-        -    S3 Bucket
-        -  Use case: Run big data analytics, artificial intelligence (AI), machine learning (ML), and high performance computing (HPC) applications to unlock data insights.
+        - S3 Bucket
+        - Use case: Run big data analytics, artificial intelligence (AI), machine learning (ML), and high performance computing (HPC) applications to unlock data insights.
 
 
 * EFS - Elastic File System
@@ -50,5 +50,4 @@ This assignment covers some basic tasks with AWS Lightsail, including creating a
     
 * Cloudfront - CDN placed at edge locations to reduce latency
     
-* Lambda (2014) - Serverless
-     
+* Lambda (2014) - Serverless     
