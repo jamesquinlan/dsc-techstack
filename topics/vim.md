@@ -1,6 +1,6 @@
 # VIM
 
-VIM (Vi IMproved) is an open source lightweight, powerful, and popular (modal) text editor available for Debian based Linux, RPM based Linux, and Windows.  (Note: MacOS is BSD distro - Debian based).  Other editors include ```vi```, ``` nano```, ```pico```, ```emacs```, ```nvi```, ```elvis```, ... .  
+VIM (Vi IMproved) is an open source lightweight, powerful, and popular (modal) text editor available for Debian based Linux, RPM based Linux, and Windows.  (Note: MacOS is BSD distro - Debian based).  Other editors include ```vi```, ```nano```, ```pico```, ```emacs```, ```nvi```, ```elvis```, ... .  
 
 
 See: https://www.vim.org
