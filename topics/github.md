@@ -1,23 +1,26 @@
 
-Topics: cloning, pushing, pulling, forking, pull requests
+<!-- 
+# Topics
+
+* cloning
+*  pushing
+*  pulling
+*  forking
+*  pull requests
+
+See also: 
+
 https://www.notion.so/Introduction-to-GitHub-202af6f64bbd4299b15f238dcd09d2a7
 
 
-# How do I connect a local folder to an existing github repo?
+## How do I connect a local folder to an existing github repo?
 https://superuser.com/questions/1412078/bring-a-local-folder-to-remote-git-repo
-
-
-
-# Git Configuration
-As you read briefly in Getting Started, you can specify Git configuration settings with the git config command. One of the first things you did was set up your name and email address:
-
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+-->
 
 
 
 
-# 1. What is GitHub?
+# What is GitHub?
 
 GitHub is a cloud-based hosting platform for Git repositories.  Git can be used independent of Github (or competetive platforms such as bitbucket).  Hosting repositories allows collaboratation and provides cloud backups of your code.
 
@@ -54,7 +57,20 @@ GitHub homepage: [github.com](http://github.com)
 
 
 
-# 2. Getting started with GitHub
+## Git Configuration
+As you read briefly in Getting Started, you can specify Git configuration settings with the git config command. One of the first things you did was set up your name and email address:
+
+```zsh
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+
+
+
+
+
+# Getting started with GitHub
 
 GitHub enables developers to access a **remote** central repository hosted in the cloud.  GitHub allows developers to access a central repository located remotely. A developer can clone (i.e., download) a local version of the project from the hosted remote repository. Then, new features or bug fixes are added to their local computer.  Changes can be **pushed** to the remote repository when ready, where the changes may (or may not) be incorporated.  
 
@@ -62,24 +78,25 @@ GitHub enables developers to access a **remote** central repository hosted in th
 
 
 
-## 2.1. Registering a GitHub account
+## Registering a GitHub account
 
 You need a GitHub account.  
 
 Sign up for a new account from the home page [GitHub.com](http://github.com) by selecting 'Sign up'.   The direct link to join is: [https://github.com/join](https://github.com/join)
 
 
-- **Step 1: Set up your account**
+#### **Step 1: Set up your account**
 
 Choose a GitHub **username**, provide an **email** address (make sure to use a legitimate email since you will be required to verify the account upon finalizing), and select a (strong) **password**.  See [guidelines for strong passwords](https://its.lafayette.edu/policies/strongpasswords/).
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e29bf4eb-66d3-4161-9a87-4efb70b9e452/join_github.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e29bf4eb-66d3-4161-9a87-4efb70b9e452/join_github.png)
+![images/join_github.png](images/join_github.png)
 
 Verify your account, then click the **'Create an account'** button at the bottom.
 
 
 
-- **Step 2: Choose your subscription**
+
+#### **Step 2: Choose your subscription**
 
 Choose the **Free** subscription plan to get started using GitHub at no cost.  
 
@@ -88,7 +105,7 @@ After choosing the **Free** plan, click the **'Continue'** button to go to the n
 
 
 
-- **Step 3: Setup your profile**
+#### **Step 3: Setup your profile**
 
 Building a profile is an optional step, but can be valuable in the long run.  Your profile can be developed over time.  
 
@@ -112,7 +129,7 @@ Finally, you need to check the inbox of the email that you provided to **verify 
 
 
 
-# 3. Using GitHub
+# Using GitHub
 
 **Common Workflow: Push an Existing Repo to Github**
 
@@ -186,11 +203,11 @@ Make sure to use the `git status` command frequently when working with Git. It's
 
 
 
-## 3.1. Creating a new GitHub repository
+## Creating a new GitHub repository
 
 To create a new GitHub repository, navigate to [github.com](http://github.com) and press the plus symbol in the top-right corner, then select the '**New repository**' option, as shown in the screenshot here:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0a68839-6604-4b0b-9e39-ed9ad705459e/new_github_repo.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0a68839-6604-4b0b-9e39-ed9ad705459e/new_github_repo.png)
+![images/new-repo.png](images/new-repo.png)
 
 You can also navigate to the GitHub page for creating new repositories by visiting this link: [https://github.com/new](https://github.com/new)
 
@@ -218,7 +235,7 @@ Add a new repository in GitHub and then in the folder on your computer that you 
 
 
 
-```
+```zsh
 git init
 git add .
 git commit -m "initial commit"
@@ -228,7 +245,7 @@ git push --set-upstream origin main
 
 Github suggests:
 
-```
+```zsh
 echo "# enaj" >> README.md
 git init
 git add README.md
@@ -241,7 +258,7 @@ git push -u origin main
 
 
 
-## 3.2. Pushing our code to the GitHub repository
+## Pushing our code to the GitHub repository
 
 After the last step, you will be forwarded to the starting page of your new GitHub repository that looks like this:
 
@@ -281,9 +298,9 @@ You can also see many other data from the repository, including past **commits**
 
 
 
-### 3.2.1 Pushing a new branch
+### Pushing a new branch
 
-```
+```zsh
 git push --set-upstream origin NEW_BRANCH_NAME
 ```
 
@@ -295,7 +312,7 @@ git push --set-upstream origin NEW_BRANCH_NAME
 
 
 
-## 3.3. Making changes to the GitHub repository
+## Making changes to the GitHub repository
 
 Any changes that we make to our local project files won't automatically affect the remote GitHub repository until we **push** those changes again to update it.
 
@@ -332,7 +349,7 @@ After that, when you navigate back to your remote repository page on [github.com
 
 
 
-## 3.4. Cloning an existing GitHub repository
+## Cloning an existing GitHub repository
 
 Another approach would be to first create a GitHub repository online, and then download it to our computer and initiate the project that way.
 
@@ -373,7 +390,7 @@ You can also clone public GitHub repositories from other developers using the sa
 
 
 
-# 4. Branching and merging
+# Branching and merging
 
 The general rule is that the **main** branch of your GitHub repository should always contain working and stable code. However, you may want to also push some code that you are currently working on, which may be unstable or not fully tested. Usually, that happens when you are adding a new feature to your code, but still want to push that code to GitHub.
 
@@ -383,7 +400,7 @@ We can create a separate copy of our project code with branching without touchin
 
 
 
-## 4.1. Pushing a branch to GitHub
+## Pushing a branch to GitHub
 
 So, when we are working on code modifications or a new feature locally, we usually want to create a new branch for that feature. We do not make changes directly on the main **main** branch, which should only contain stable code.
 
@@ -399,7 +416,7 @@ git checkout -b new-feature
 Then, you can create a new sample file called **example.js**, and add the following code:
 
 ```jsx
-console.log("New greeting!");
+console.log("Hello World!");
 ```
 
 
@@ -409,7 +426,7 @@ After that, run the standard steps to commit the new changes to the **new-featur
 
 ```zsh
 git add .
-git commit -m "Add new greeting"
+git commit -m "Add greeting"
 ```
 
 
@@ -434,7 +451,7 @@ If you refresh the **hello-world** GitHub repository page, you will see that the
 
 
 
-## 4.2. Creating a Pull Request (PR)
+## Creating a Pull Request (PR)
 
 We create a pull request to notify the project owner (or the team leader) that we want to implement changes from our custom branch to the main **main** branch.
 
@@ -482,7 +499,7 @@ Check the following GitHub guides:
 
 
 
-## 4.3. Pull changes from GitHub
+##   Pull changes from GitHub
 
 After making changes or merging branches via pull requests on GitHub, the remote repository may look different from the local repository on your computer. To get the latest changes from the remote GitHub repository, we use the **git pull** command.
 
@@ -513,7 +530,7 @@ When we are up to date with the remote branch, we can then work to develop the p
 
 
 
-# 5. Forking projects on GitHub
+#  Forking projects on GitHub
 
 When using GitHub, you may find yourself wanting to use someone else's repository as a starting point for your project. Also, you may wish to contribute to a third-party project, which is very popular in the open-source community. Contributing to other projects can also be a great way to build your knowledge and experience, as well as your portfolio!
 
@@ -526,7 +543,7 @@ If you are looking to contribute to a project, you can create new *pull requests
 
 
 
-## 5.1. Forking a repository
+##  Forking a repository
 
 There is a sample repository called *Spoon-Knife* hosted by GitHub, which they created for testing purposes: [https://github.com/octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife)
 
@@ -540,7 +557,7 @@ When the process is finished, you will be taken to your copy of the *Spoon-Knife
 
 
 
-## 5.2. Working with a forked repository on your local machine
+##   Working with a forked repository on your local machine
 
 To **clone** the forked repository, visit its page from your GitHub profile and select the green **'Clone or download'** menu button, then click on the icon shown in the screenshot to copy the repository URL that we will need to use:
 
@@ -562,7 +579,7 @@ Also, you can push the changes that you made to the forked (remote) repository t
 
 
 
-## 5.3. Proposing changes to the original project
+##  Proposing changes to the original project
 
 After you made changes to the project that could potentially benefit the original project you forked and want to help improve the open-source community, you can consider offering to contribute your changes.
 
@@ -586,7 +603,7 @@ After adding information about your changes, you can finally send a new pull req
 
 
 
-# 6. Renaming branches
+# Renaming branches
 
 To rename your branch from `master` to `main`:
 
