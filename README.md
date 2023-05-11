@@ -1,6 +1,6 @@
 # DSC-TECHSTACK
 
-TechStack topics for data scientists.  List of topics (see topics folder) is not exhaustive.  Course inspired by (i) a summer course run by [Dr. Ed Overman at Ohio State University](https://math.osu.edu/people/overman.2) and (ii) [MIT - The Missing Semester](https://missing.csail.mit.edu).
+TechStack topics for computational (and data) scientists.  List of topics (see topics folder) is not exhaustive.  Course inspired by (i) a summer course run by [Dr. Ed Overman at Ohio State University](https://math.osu.edu/people/overman.2) and (ii) [MIT - The Missing Semester](https://missing.csail.mit.edu).
 
 ## Course description
 
