@@ -2,10 +2,14 @@
 
 TechStack topics for computational (and data) scientists.  List of topics (see topics folder) is not exhaustive.  Course inspired by (i) a summer course run by [Dr. Ed Overman at Ohio State University](https://math.osu.edu/people/overman.2) and (ii) [MIT - The Missing Semester](https://missing.csail.mit.edu).
 
+---
+
+
 ## Course description
 
 This course facilitates the development of proficiency with the tools of computational and data science. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include but are not limited to the command-line, the use of text editors, and version control systems. Mastering such tools enables one to be more efficient at the problem-solving process and provides unique knowledge and skills.
 
+---
 
 ## Learning Outcomes
 At the conclusion of this course students will be able to:
@@ -22,6 +26,7 @@ At the conclusion of this course students will be able to:
 * differentiate and integrate functions unable to do by hand; 
 * examine computer security and privacy issues.
 
+---
 
 ## Topics
 
