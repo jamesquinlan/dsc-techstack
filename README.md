@@ -23,6 +23,7 @@ At the conclusion of this course students will be able to:
 * obtain data from website via webscraping;
 * visualize and manipulate geometrical objects;
 * perform basic data manipulations using R;
+* consider data ethics issues;
 * differentiate and integrate functions unable to do by hand; 
 * examine computer security and privacy issues.
 
