@@ -13,12 +13,12 @@ LaTeX is used to create scientific documents, books, and various other types of 
 
 
 
-LaTeX isolates the content of the document from its style (much the same as HTML and CSS). As a result, a style template can be built that standardizes the look of documents from that class. From resumes to slideshows, there are hundreds of options to choose from.
+LaTeX isolates the document's content from its style (much the same as HTML and CSS). As a result, a style template can be built that standardizes the look of documents from that class. From resumes to slideshows, there are hundreds of options to choose from.
 
 Writing your first piece of LaTeX
 The first step is to create a new LaTeX project. You can do this on your computer by creating a new .tex file or starting a new project in Overleaf. Let's start with the simplest working example:
 
-```
+```latex
 \documentclass{article}
 
 \begin{document}
@@ -48,17 +48,17 @@ The text was entered after the \begin{document} command in the previous example.
 
 
 
-```
+```latex
 \documentclass[12pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
 ```
 
 Below is a detailed description of each line:
 
-`\documentclass[12pt, letterpaper]{article}`:  As said before, this defines the type of document. Additional parameters in the square brackets can be passed to the command. These parameters must be comma-separated. In the example, the extra parameters set the font size (12pt) and the paper size (letterpaper). Of course, other font sizes (9pt, 11pt, 12pt) can be used, but if none is specified, the default size is 10pt. As for the paper size, other possible values are a4paper and legalpaper; see the article about Page size and margins for more details about this.
+`\documentclass[12pt, letterpaper]{article}`:  This defines the document type. Additional parameters in the square brackets can be passed to the command. These parameters must be comma-separated. In the example, the extra parameters set the font size (12pt) and the paper size (letterpaper). Of course, other font sizes (9pt, 11pt, 12pt) can be used, but if none is specified, the default size is 10pt. As for the paper size, other possible values are *a4paper* and *legalpaper*.
 
 
-`\usepackage[utf8]{inputenc}`: This is the encoding for the document. It can be omitted or changed to another encoding, but utf-8 is recommended. Unless you need another encoding or are unsure about it, add this line to the preamble.
+`\usepackage[utf8]{inputenc}`: This is the encoding for the document. It can be omitted or changed to another encoding, but UTF-8 is recommended. Add this line to the preamble unless you need another encoding or are unsure about it.
 
 
 #### Adding a title, author, and date
@@ -75,14 +75,14 @@ This can be added after the author's name inside the braces of the author comman
 You can enter the date manually or use the command \today to update the date automatically when you compile your document.
 With these lines added, your preamble should look something like this:
 
-```
+```latex
 \documentclass[12pt, letterpaper, twoside]{article}
 \usepackage[utf8]{inputenc}
 
 \title{First document}
 \author{Hubert Farnsworth \thanks{funded by the Overleaf team}}
 \date{February 2017}
-Now that you have given your document a title, author, and date, you can print this information on the document with the \maketitle command. This should be included in the document's body at the place you want the title to be printed.
+Now that you have given your document a title, author, and date, you can print this information on the document with the \maketitle command. This should be included in the document's body where you want the title to be printed.
 
 \begin{document}
 
@@ -97,7 +97,7 @@ We have added a title, author, and date to our first LaTeX{} document!
 #### Adding comments
 It is often a good idea to include comments in the code. Comments are text inserted into a document that will not be executed or printed and does not affect the document. Comments can help organize your work, add notes, or temporarily remove lines.  LaTeX comments are denoted with a percent symbol, for example:
 
-```
+```latex
 \begin{document}
 
 \maketitle
@@ -126,7 +126,7 @@ discoveries in `\underline{science}`
 were made by `\textbf{\textit{accident}}`.
 
 
-Another very useful command is the `\emph{...}` command. What the `\emph` command does with its argument depends on the context - inside normal text, the emphasized text is italicized, but this behavior is reversed if used inside an italicized text- see the example below:
+Another convenient command is the `\emph{...}` command. What the `\emph` command does with its argument depends on the context - inside the normal text, the emphasized text is italicized, but this behavior is reversed if used inside an italicized text- see the example below:
 
 Some of the greatest `\emph{discoveries}` in science were made by accident.
 
@@ -149,7 +149,7 @@ We will now look at how to add images to a LaTeX document. On Overleaf, you will
 
 Below is an example of how to include a picture.
 
-```
+```latex
 \documentclass{article}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
@@ -185,7 +185,7 @@ Note: The file extension is allowed to be included, but it's a good idea to omit
 ## Captions, labels and references
 Images can be captioned, labeled and referenced by means of the figure environment as shown below:
 
-```
+```latex
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.25\textwidth]{mesh}
@@ -226,7 +226,7 @@ There are two main different types of lists, ordered lists and unordered lists. 
 ## Unordered lists
 Unordered lists are produced by the `itemize` environment. Each entry must be preceded by the control sequence `\item` as shown below.
 
-```
+```latex
 \begin{itemize}
   \item The individual entries are indicated with a black dot, a so-called bullet.
   \item The text in the entries may be of any length.
@@ -242,7 +242,7 @@ By default, the individual entries are indicated with a black dot, a so-called b
 ## Ordered lists
 Ordered lists have the same syntax inside a different environment. We make ordered lists using the enumerate environment:
 
-```
+```latex
 \begin{enumerate}
   \item This is the first entry in our list
   \item The list numbers increase with each entry we add
@@ -258,7 +258,7 @@ As with unordered lists, each entry must be preceded by the control sequence `\i
 
 We find it best to use the outlines package.  It makes sublists easier because it eliminates complicated nesting.   Add the following in the preamble (or before `\begin{document}`).
 
-```
+```latex
 \usepackage{outlines}
 \usepackage{enumitem}
 \setenumerate[1]{label=\arabic*.}
@@ -269,7 +269,7 @@ We find it best to use the outlines package.  It makes sublists easier because i
 
 Then an ordered list is implemented by:
 
-```
+```latex
 \begin{outline}[enumerate]
   \1 First
   \1 Second
@@ -298,7 +298,8 @@ The mass-energy equivalence is described by the famous equation
 \[ E=mc^2 \]
 discovered in 1905 by Albert Einstein. 
 In natural units ($c = 1$), the formula expresses the identity
-```
+
+```latex
 \begin{equation}
 E=m
 \end{equation}
@@ -328,7 +329,7 @@ Mathematical operators are prefixed with a backslash as `$\sin(\beta)$`, `$\cos(
 ### Align
 Alternatively, there is an align environment for aligning say the equals sign, `=`, in a series of multiple equation lines.
 
-```
+```latex
 \begin{align}
  ax + b &= c     \\
  ax     &= c - b \\
@@ -337,7 +338,7 @@ Alternatively, there is an align environment for aligning say the equals sign, `
 ```
 
 You can **suppress the equation numbers** using `*`, in particular, 
-```
+```latex
 \begin{align*}
  ax + b &= c     \\
  ax     &= c - b \\
@@ -351,13 +352,15 @@ You can **suppress the equation numbers** using `*`, in particular,
 ## Abstracts
 In scientific documents, it's a common practice to include a brief overview of the main subject of the paper. In LaTeX there's an abstract environment for this. The abstract environment will put the text in a special format at the top of your document.
 
-```
+```latex
 \begin{document}
 
 \begin{abstract}
 This is a simple paragraph at the beginning of the 
-document. A brief introduction about the main subject.
+document. A brief introduction about the main subject.  
+It is usually between 100 - 300 words.
 \end{abstract}
+
 \end{document}
 ```
 
@@ -367,7 +370,7 @@ document. A brief introduction about the main subject.
 
 ## Paragraphs and newlines
 
-```
+```latex
 \begin{document}
 
 \begin{abstract}
@@ -399,7 +402,7 @@ You can find more information in the Paragraphs and new lines article.
 ## Chapters and Sections
 Commands to organize a document vary depending on the document type, the simplest form of organization is the sectioning, available in all formats.
 
-```
+```latex
 \chapter{First Chapter}
 
 \section{Introduction}
@@ -429,14 +432,14 @@ Etiam lobortis facilisissem
 
 The command \section{} marks the beginning of a new section, inside the braces is set the title. Section numbering is automatic and can be disabled by including a * in the section command as `\section*{}`. We can also have `\subsection{}`s, and indeed `\subsubsection{}`s. The basic levels of depth are listed below:
 
-```
+```latex
 -1  \part{part}
-0 \chapter{chapter}
-1 \section{section}
-2 \subsection{subsection}
-3 \subsubsection{subsubsection}
-4 \paragraph{paragraph}
-5 \subparagraph{subparagraph}
+ 0 \chapter{chapter}
+ 1 \section{section}
+ 2 \subsection{subsection}
+ 3 \subsubsection{subsubsection}
+ 4 \paragraph{paragraph}
+ 5 \subparagraph{subparagraph}
 ```
 
 Note that `\part` and `\chapter` are only available in report and book document classes.
@@ -452,12 +455,12 @@ For a more complete discussion about the document structure see the article abou
 Creating a simple table in LaTeX
 Below you can see the simplest working example of a table
 
-```
+```latex
 \begin{center}
 \begin{tabular}{ c c c }
- cell1 & cell2 & cell3 \\ 
- cell4 & cell5 & cell6 \\  
- cell7 & cell8 & cell9    
+    cell1 & cell2 & cell3 \\ 
+    cell4 & cell5 & cell6 \\  
+    cell7 & cell8 & cell9    
 \end{tabular}
 \end{center}
 ```
@@ -469,13 +472,13 @@ The tabular environment is the default LaTeX method to create tables. You must s
 ### Adding borders
 The tabular environment is more flexible, you can put separator lines in between each column.
 
-```
+```latex
 \begin{center}
 \begin{tabular}{ |c|c|c| } 
  \hline
- cell1 & cell2 & cell3 \\ 
- cell4 & cell5 & cell6 \\ 
- cell7 & cell8 & cell9 \\ 
+    cell1 & cell2 & cell3 \\ 
+    cell4 & cell5 & cell6 \\ 
+    cell7 & cell8 & cell9 \\ 
  \hline
 \end{tabular}
 \end{center}
@@ -490,22 +493,17 @@ You can add borders using the horizontal line command \hline and the vertical li
 \hline: This will insert a horizontal line. We have included horizontal lines at the top and bottom of the table here. There is no restriction on the number of times you can use \hline.
 Below you can see a second example.
 
-```
+```latex
 \begin{center}
  \begin{tabular}{||c c c c||} 
  \hline
- Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
- \hline\hline
- 1 & 6 & 87837 & 787 \\ 
- \hline
- 2 & 7 & 78 & 5415 \\
- \hline
- 3 & 545 & 778 & 7507 \\
- \hline
- 4 & 545 & 18744 & 7560 \\
- \hline
- 5 & 88 & 788 & 6344 \\ [1ex] 
- \hline
+    Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+    \hline\hline
+    1 & 6 & 87837 & 787 \\ \hline
+    2 & 7 & 78 & 5415 \\ \hline
+    3 & 545 & 778 & 7507 \\ \hline
+    4 & 545 & 18744 & 7560 \\ \hline
+    5 & 88 & 788 & 6344 \\ [1ex] \hline
 \end{tabular}
 \end{center}
 ```
@@ -549,7 +547,7 @@ You can caption and reference tables in much the same way as images. The only di
 
 Table `\ref{table:data}` is an example of referenced LaTeX{} elements.
 
-```
+```latex
 \begin{table}[h!]
 \centering
 \begin{tabular}{||c c c c||} 
@@ -579,7 +577,7 @@ Note: If you are using captions and references on your own computer, you will ha
 ##  Table of Contents
 To create the table of contents is straightforward, the command `\tableofcontents` does all the work for you:
 
-```
+```latex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
  
@@ -619,7 +617,7 @@ sollicitudin.  Praesent imperdiet mi necante...
 ```
 
 
-Sections, subsections and chapters are automatically included in the table of contents. To manually add entries, for example when you want an unnumbered section, use the command `\addcontentsline` as shown in the example.
+Sections, subsections, and chapters are automatically included in the table of contents. To manually add entries, for example, when you want an unnumbered section, use the command `\addcontentsline` as shown in the example.
 
 
 
