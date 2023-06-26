@@ -58,6 +58,14 @@ At the conclusion of this course students will be able to:
   publisher={Prentice Hall}
 }
 
+@misc{richardson2007beautiful,
+  title={Beautiful soup documentation},
+  author={Richardson, Leonard},
+  year={2007},
+  publisher={April},
+  url = {https://buildmedia.readthedocs.org/media/pdf/beautiful-soup-4/latest/beautiful-soup-4.pdf}
+}
+
 ```
 
 
