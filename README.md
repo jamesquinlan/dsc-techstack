@@ -47,4 +47,17 @@ At the conclusion of this course students will be able to:
 
 
 
+## References
+
+```bibtex
+
+@misc{kernighan2020c,
+  title={The C programming language.},
+  author={Kernighan, Brian W and Ritchie, Dennis M},
+  year={2020},
+  publisher={Prentice Hall}
+}
+
+```
+
 
