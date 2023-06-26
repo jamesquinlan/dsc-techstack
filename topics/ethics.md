@@ -1,6 +1,10 @@
 # Data Ethics
 
-Data ethics is concerned with the ethical implications of data collection, analysis, and usage. As more and more data is collected and analyzed in today's digital age, it is essential to consider the ethical implications of how that data is collected, analyzed, and used.
+> **NOTE**: Although this topic is not a technical one, however, due to its importance, it is covered in this course.
+
+ 
+
+Data ethics concerns the ethical implications of data collection, analysis, and usage. As more and more data is collected and analyzed in today's digital age, it is essential to consider the ethical implications of how that data is collected, analyzed, and used.
 
 Data ethics considers data ownership, privacy, consent, transparency, and accountability. It is concerned with balancing the benefits of data analysis and usage with the potential harms to individuals, society, and the environment.
 
@@ -10,11 +14,11 @@ Some of the key topics in data ethics include:
 
 * __Consent__: How can individuals give meaningful consent to collecting and using their data?
 
-* __Transparency__: How can the collection and use of data be made more transparent to individuals and society as a whole?
+* __Transparency__: How can the collection and use of data be made more transparent to individuals and society?
 
 * __Bias__: How can we ensure data analysis is free from bias and discrimination?
 
-* __Accountability__: Who is responsible for ensuring that data is collected, analyzed, and used ethically?
+* __Accountability__: Who ensures data is collected, analyzed, and used ethically?
 
 * __Fairness__: How can we ensure that the benefits and risks of data analysis are distributed fairly across society?
 
@@ -24,10 +28,10 @@ Data ethics is a complex and evolving field that requires careful consideration 
 
 ## Assignment 
 
-In this assignment, you will explore the ethical implications of data collection, analysis, and usage. You will consider issues such as privacy, consent, transparency, bias, accountability, and fairness.
+In this assignment, you will explore the ethical implications of data collection, analysis, and usage. You will consider privacy, consent, transparency, bias, accountability, and fairness issues.
 
 #### Task 1: Select a Data-Related Issue
-Choose a data-related issue that you are interested in exploring further. This could be an issue that you have personal experience with, or it could be a topic that you have read about or heard discussed. Some examples of data-related issues include:
+You can choose a data-related issue that you are interested in exploring further. This could be an issue you have personal experience with, or it could be a topic you have read about or heard discussed. Some examples of data-related problems include:
 
 * Social media and data privacy
 
@@ -35,12 +39,12 @@ Choose a data-related issue that you are interested in exploring further. This c
 
 * Healthcare data and patient privacy
 
-* Data-driven decision making and algorithmic bias
+* Data-driven decision-making and algorithmic bias
 
 
 #### Task 2: Research the Issue
 
-Using online sources such as news articles, academic papers, and blogs, research your chosen data-related issue. Consider questions such as:
+Research your chosen data-related issue using online sources such as news articles, academic papers, and blogs. Consider questions such as:
 
 * What are the potential ethical implications of this issue?
 
@@ -50,7 +54,7 @@ Using online sources such as news articles, academic papers, and blogs, research
 
 
 #### Task 3: Write a Reflection
-Based on your research, write a reflection on the ethical implications of your chosen data-related issue. Your reflection should address the following questions:
+Based on your research, could you write a reflection on the ethical implications of your chosen data-related issue? Your reflection should address the following questions:
 
 * What are the potential benefits and risks of collecting, analyzing, and using data related to this issue?
 
@@ -60,4 +64,4 @@ Based on your research, write a reflection on the ethical implications of your c
 
 #### Task 4: Present your Reflection
 
-Present your reflection to the class. You may choose to present your reflection in the form of a written report, a slide presentation, or a video. Your presentation should be no more than 10 minutes in length and should summarize your research and reflections on the ethical implications of your chosen data-related issue.
+Present your reflection to the class. You may present your reflection as a written report, a slide presentation, or a video. Your presentation should be at most 10 minutes in length and should summarize your research and reflections on the ethical implications of your chosen data-related issue.
