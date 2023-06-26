@@ -1,6 +1,6 @@
 # Data Ethics
 
-> **NOTE**: Although this topic is not a technical one, however, due to its importance, it is covered in this course.
+> **NOTE**: Although this topic is not a technical one, due to its importance, it is covered in this course.
 
  
 
