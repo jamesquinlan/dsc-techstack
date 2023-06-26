@@ -5,46 +5,46 @@ Author: Overleaf and other unknown authors.
 
 ## What is LaTeX?
 
-LaTeX (pronounced LAY-tek or LAH-tek) is a tool for creating documents with a professional appearance. It is based on the premise that you should just concentrate on the content of your text and that the computer will handle the formatting. Rather of spacing out text on a page to control formatting, as in Microsoft Word or LibreOffice Writer, users can simply type plain text and let LaTeX handle the rest.
+LaTeX (pronounced LAY-tek or LAH-tek) is a tool for creating documents with a professional appearance. It is based on the premise that you should just concentrate on the content of your text and that the computer will handle the formatting. Instead of spacing out text on a page to control formatting, as in Microsoft Word or LibreOffice Writer, users can simply type plain text and let LaTeX handle the rest.
 Why learn LaTeX?
 
 
-LaTeX is used to create scientific documents, books, and a variety of other types of publications. Tables, figures, mathematics, a table of contents, referencing, and constructing bibliographies are all simple to incorporate, maintaining a uniform layout across all sections.
+LaTeX is used to create scientific documents, books, and various other types of publications. Tables, figures, mathematics, a table of contents, referencing, and constructing bibliographies are all simple to incorporate, maintaining a uniform layout across all sections.
 
 
 
-LaTeX isolates the content of the document from its style (much the same as html and css). As a result, a style template can be built that standardizes the look of documents from that class. From resumes to slideshows, there are hundreds of options to choose from.
+LaTeX isolates the content of the document from its style (much the same as HTML and CSS). As a result, a style template can be built that standardizes the look of documents from that class. From resumes to slideshows, there are hundreds of options to choose from.
 
 Writing your first piece of LaTeX
-The first step is to create a new LaTeX project. You can do this on your own computer by creating a new .tex file, or else you can start a new project in Overleaf. Let's start with the simplest working example:
+The first step is to create a new LaTeX project. You can do this on your computer by creating a new .tex file or starting a new project in Overleaf. Let's start with the simplest working example:
 
 ```
 \documentclass{article}
 
 \begin{document}
-First document. This is a simple example, with no 
+First document. This is a simple example with no 
 extra parameters or packages included.
 \end{document}
 ```
 
-By indenting the first line of the paragraph, LaTeX has already taken care of a bit of formatting. Next, let us take a closer look at each component of our code.
+By indenting the first line of the paragraph, LaTeX has already taken care of a bit of formatting. Next, let us look at each component of our code.
 
 
 
 
  
-The first line of code declares the type of document, known as the class. The class controls the overall appearance of the document. Different documents will require different classes i.e., a CV/resume will require a different class than a scientific paper. In this case, the class is an article, the simplest and most common LaTeX class. Other documents you may be working on may require different classes, such as books or reports.
+The first line of code declares the type of document, the class. The class controls the overall appearance of the document. Different documents will require different classes, i.e., a CV/resume will require a different class than a scientific paper. In this case, the class is an article, the simplest and most common LaTeX class. Other documents you may be working on may require different classes, such as books or reports.
 
-After this, you write the content of our document, enclosed inside the \begin{document} and \end{document} tags. This is known as the body of the document. You can start writing here and make changes to the text if you wish. To see the result of these changes in the PDF, you have to compile the document. To do this in Overleaf, hit Recompile. (You can also set your project to automatically recompile when you edit your files by clicking on the small arrow next to the 'Recompile button and set 'Auto Compile to 'On.)
+After this, you write the content of our document, enclosed inside the \begin{document} and \end{document} tags. This is known as the body of the document. You can start writing here and change the text if you wish. You have to compile the document to see the result of these changes in the PDF. To do this in Overleaf, hit Recompile. (You can also set your project to automatically recompile when you edit your files by clicking on the small arrow next to the 'Recompile button and set 'Auto Compile to 'On.)
 
-If you use a basic text editor such as gedit, emacs, vim, sublime, notepad etc., you will have to compile the document manually. To do this, simply run pdfLaTeX <your document> in your computers terminal/command line. See here for more information on how to do this.
+If you use a basic text editor such as gedit, emacs, vim, sublime, notepad, etc., you will have to compile the document manually. Run pdfLaTeX <your document> in your computer's terminal/command line to do this. See here for more information on how to do this.
 
-If you are using a dedicated LaTeX editor such as TeXmaker or TeXworks, simply hit the Recompile button. Consult the documentation of the program if you are unsure of where this is.
+If you use a dedicated LaTeX editor like TeXmaker or TeXworks, hit the Recompile button. Consult the program documentation if you are unsure where this is.
 
 Now that you have learned how to add content to our document, the next step is to give it a title. To do this, we must talk briefly about the preamble.
 
 ## The preamble of a document
-In the previous example, the text was entered after the \begin{document} command. Everything in your .tex file before this point is called the preamble. In the preamble, you define the type of document you are writing, the language you are writing in, the packages you would like to use (more on this later), and several other elements. For instance, a standard document preamble would look like this:
+The text was entered after the \begin{document} command in the previous example. Everything in your .tex file before this point is called the preamble. In the preamble, you define the type of document you are writing, the language you are writing in, the packages you would like to use (more on this later), and several other elements. For instance, a standard document preamble would look like this:
 
 
 
@@ -53,27 +53,27 @@ In the previous example, the text was entered after the \begin{document} command
 \usepackage[utf8]{inputenc}
 ```
 
-Below a detailed description of each line:
+Below is a detailed description of each line:
 
-`\documentclass[12pt, letterpaper]{article}`:  As said before, this defines the type of document. Some additional parameters included in the square brackets can be passed to the command. These parameters must be comma-separated. In the example, the extra parameters set the font size (12pt) and the paper size (letterpaper). Of course other font sizes (9pt, 11pt, 12pt) can be used, but if none is specified, the default size is 10pt. As for the paper size other possible values are a4paper and legalpaper; see the article about Page size and margins for more details about this.
-
-
-`\usepackage[utf8]{inputenc}`: This is the encoding for the document. It can be omitted or changed to another encoding but utf-8 is recommended. Unless you specifically need another encoding, or if you are unsure about it, add this line to the preamble.
+`\documentclass[12pt, letterpaper]{article}`:  As said before, this defines the type of document. Additional parameters in the square brackets can be passed to the command. These parameters must be comma-separated. In the example, the extra parameters set the font size (12pt) and the paper size (letterpaper). Of course, other font sizes (9pt, 11pt, 12pt) can be used, but if none is specified, the default size is 10pt. As for the paper size, other possible values are a4paper and legalpaper; see the article about Page size and margins for more details about this.
 
 
-#### Adding a title, author and date
-To add a title, author and date to our document, you must add three lines to the preamble (NOT the main body of the document). These lines are
+`\usepackage[utf8]{inputenc}`: This is the encoding for the document. It can be omitted or changed to another encoding, but utf-8 is recommended. Unless you need another encoding or are unsure about it, add this line to the preamble.
+
+
+#### Adding a title, author, and date
+To add a title, author, and date to our document, you must add three lines to the preamble (NOT the document's main body). These lines are
 
 `\title{First document}`: This is the title.
 
-`\author{Hubert Farnsworth}`: Here you put the name of the Author(s) and, as an optional addition, you can add the next command within the curly braces:
+`\author{Hubert Farnsworth}`: Here, you put the name of the Author(s) and, as an optional addition, you can add the next command within the curly braces:
 
 `\thanks{funded by the Overleaf team}` 
 
-This can be added after the name of the author, inside the braces of the author command. It will add a superscript and a footnote with the text inside the braces. Useful if you need to thank an institution in your article.
+This can be added after the author's name inside the braces of the author command. It will add a superscript and a footnote with the text inside the braces. Useful if you need to thank an institution in your article.
 `\date{February 2014}`
-You can enter the date manually or use the command \today so the date will be updated automatically at the time you compile your document
-With these lines added, your preamble should look something like this
+You can enter the date manually or use the command \today to update the date automatically when you compile your document.
+With these lines added, your preamble should look something like this:
 
 ```
 \documentclass[12pt, letterpaper, twoside]{article}
@@ -82,27 +82,27 @@ With these lines added, your preamble should look something like this
 \title{First document}
 \author{Hubert Farnsworth \thanks{funded by the Overleaf team}}
 \date{February 2017}
-Now that you have given your document a title, author and date, you can print this information on the document with the \maketitle command. This should be included in the body of the document at the place you want the title to be printed.
+Now that you have given your document a title, author, and date, you can print this information on the document with the \maketitle command. This should be included in the document's body at the place you want the title to be printed.
 
 \begin{document}
 
 \maketitle
 
-We have now added a title, author and date to our first LaTeX{} document!
+We have added a title, author, and date to our first LaTeX{} document!
 
 \end{document}
 ```
 
   
 #### Adding comments
-It is often a good idea to include comments in code. Comments are text inserted into a document that will not be executed or printed and does not affect the document. Comment can help organize your work, add notes, or temporarily remove lines.  LaTeX comments are denoted with a percent symbol, for example:
+It is often a good idea to include comments in the code. Comments are text inserted into a document that will not be executed or printed and does not affect the document. Comments can help organize your work, add notes, or temporarily remove lines.  LaTeX comments are denoted with a percent symbol, for example:
 
 ```
 \begin{document}
 
 \maketitle
 
-We have now added a title, author and date to our first LaTeX{} document!
+We have added a title, author, and date to our first LaTeX{} document!
 
 % This line here is a comment. It will not be printed in the document.
 
@@ -110,7 +110,7 @@ We have now added a title, author and date to our first LaTeX{} document!
 ```
 
   
-##  Bold, italics and underlining
+##  Bold, italics, and underlining
 We will now look at some simple text formatting commands.
 
 __Bold__: Bold text in LaTeX is written with the `\textbf{...}` command.
@@ -126,7 +126,7 @@ discoveries in `\underline{science}`
 were made by `\textbf{\textit{accident}}`.
 
 
-Another very useful command is the `\emph{...}` command. What the `\emph` command actually does with its argument depends on the context - inside normal text the emphasized text is italicized, but this behaviour is reversed if used inside an italicized text- see example below:
+Another very useful command is the `\emph{...}` command. What the `\emph` command does with its argument depends on the context - inside normal text, the emphasized text is italicized, but this behavior is reversed if used inside an italicized text- see the example below:
 
 Some of the greatest `\emph{discoveries}` in science were made by accident.
 
@@ -136,7 +136,7 @@ Some of the greatest `\emph{discoveries}` in science were made by accident.
 `\textbf{Some of the greatest \emph{discoveries} in science were made by accident.}`
 
 
-Moreover, some packages, e.g. Beamer, change the behaviour of `\emph` command.
+Moreover, some packages, e.g. Beamer, change the behavior of the `\emph` command.
 
 
 
@@ -147,7 +147,7 @@ Moreover, some packages, e.g. Beamer, change the behaviour of `\emph` command.
 ##  Images
 We will now look at how to add images to a LaTeX document. On Overleaf, you will first have to upload the images.
 
-Below is a example on how to include a picture.
+Below is an example of how to include a picture.
 
 ```
 \documentclass{article}
@@ -156,7 +156,7 @@ Below is a example on how to include a picture.
 
 \begin{document}
 The universe is immense and it seems to be homogeneous, 
-in a large scale, everywhere we look at.
+on a large scale, everywhere we look.
 
 \includegraphics{universe}
 
@@ -168,13 +168,13 @@ There's a picture of a galaxy above
 
 
 
-LaTeX can not manage images by itself, so you will need to use a package. Packages can be used to change the default look of your LaTeX document, or to allow more functionalities. In this case, you need to include an image in our document, so you should use the graphicx package. This package gives new commands, `\includegraphics{...}` and `\graphicspath{...}`. To use the graphicx package, include the following line in you preamble: \usepackage{graphicx}
+LaTeX can not manage images by itself, so you will need to use a package. Packages can be used to change the default look of your LaTeX document or to allow more functionalities. In this case, you need to include an image in our document, so you should use the `graphicx` package. This package gives new commands, `\includegraphics{...}` and `\graphicspath{...}`. To use the `graphicx` package, include the following line in your preamble: \usepackage{graphicx}
 
 The command \graphicspath{ {images/} } tells LaTeX that the images are kept in a folder named images under the current directory.
 
-The \includegraphics{universe} command is the one that actually included the image in the document. Here universe is the name of the file containing the image without the extension, then universe.PNG becomes universe. The file name of the image should not contain white spaces nor multiple dots.
+The \includegraphics{universe} command is the one that actually included the image in the document. Here universe is the name of the file containing the image without the extension, then universe.PNG becomes the universe. The file name of the image should not contain white spaces or multiple dots.
 
-Note: The file extension is allowed to be included, but it's a good idea to omit it. If the file extension is omitted it will prompt LaTeX to search for all the supported formats. It is also usually recommended to use lowercase letters for the file extension when uploading image files. For more details see the section about generating high resolution and low resolution images.
+Note: The file extension is allowed to be included, but it's a good idea to omit it. If the file extension is omitted it will prompt LaTeX to search for all the supported formats. It is also usually recommended to use lowercase letters for the file extension when uploading image files. For more details see the section about generating high-resolution and low-resolution images.
 
 
 
@@ -183,7 +183,7 @@ Note: The file extension is allowed to be included, but it's a good idea to omit
 
 
 ## Captions, labels and references
-Images can be captioned, labelled and referenced by means of the figure environment as shown below:
+Images can be captioned, labeled and referenced by means of the figure environment as shown below:
 
 ```
 \begin{figure}[h]
@@ -194,7 +194,7 @@ Images can be captioned, labelled and referenced by means of the figure environm
 \end{figure}
 ```
 
-As you can see in the figure \ref{fig:mesh1}, the 
+As you can see in figure \ref{fig:mesh1}, the 
 function grows near 0. Also, in the page \pageref{fig:mesh1} 
 is the same example.
 InsertingImages.PNG
@@ -204,7 +204,7 @@ There are three important commands in the example:
 
 `\caption{a nice plot}`: As you may expect this command sets the caption for the figure. If you create a list of figures this caption will be used there. You can place it above or below the figure.
 
-`\label{fig:mesh1}`: If you need to refer the image within your document, set a label with this command. The label will number the image, and combined with the next command will allow you to reference it.
+`\label{fig:mesh1}`: If you need to refer to the image within your document, set a label with this command. The label will number the image, and combined with the next command will allow you to reference it.
 
 `\ref{fig:mesh1}`: This code will be substituted by the number corresponding to the referenced figure.
 When placing images in a LaTeX document, we should always put them inside a figure environment or similar so that LaTeX will position the image in a way that fits in with the rest of your text.
@@ -224,7 +224,7 @@ There are two main different types of lists, ordered lists and unordered lists. 
 
 
 ## Unordered lists
-Unordered lists are produced by the itemize environment. Each entry must be preceded by the control sequence \item as shown below.
+Unordered lists are produced by the `itemize` environment. Each entry must be preceded by the control sequence `\item` as shown below.
 
 ```
 \begin{itemize}
@@ -233,14 +233,14 @@ Unordered lists are produced by the itemize environment. Each entry must be prec
 \end{itemize}
 ```
 
-By default the individual entries are indicated with a black dot, so-called bullet. The text in the entries may be of any length.
+By default, the individual entries are indicated with a black dot, a so-called bullet. The text in the entries may be of any length.
 
  
 
 
 
 ## Ordered lists
-Ordered list have the same syntax inside a different environment. We make ordered lists using the enumerate environment:
+Ordered lists have the same syntax inside a different environment. We make ordered lists using the enumerate environment:
 
 ```
 \begin{enumerate}
@@ -250,13 +250,13 @@ Ordered list have the same syntax inside a different environment. We make ordere
 ```
 
 
-As with unordered lists, each entry must be preceded by the control sequence `\item`, which will automatically generate the number labelling the item. The enumerate labels consists of sequential numbers starting at one.
+As with unordered lists, each entry must be preceded by the control sequence `\item`, which will automatically generate the number labeling the item. The enumerate labels consist of sequential numbers starting at one.
 
 
 
 ### Outline package
 
-We find it best to use the outlines package.  It makes sublists easier because it eliminates complicated nesting.   Add the following in the preable (or before `\begin{document}`).
+We find it best to use the outlines package.  It makes sublists easier because it eliminates complicated nesting.   Add the following in the preamble (or before `\begin{document}`).
 
 ```
 \usepackage{outlines}
@@ -278,13 +278,13 @@ Then an ordered list is implemented by:
 \end{outline}
 ```
 
-Remove the `[enumerate]` for unordered list.  
+Remove the `[enumerate]` for an unordered list.  
 
 
 
 
 ## Mathematics: equations and expressions 
-One of the main advantages of LaTeX is the ease at which mathematical expressions can be written. LaTeX allows two writing modes for mathematical expressions: the inline mode and the display mode. The first one is used to write formulas that are part of a text. The second one is used to write expressions that are not part of a text or paragraph, and are therefore put on separate lines. Let's see an example of the inline mode:
+One of the main advantages of LaTeX is the ease with which mathematical expressions can be written. LaTeX allows two writing modes for mathematical expressions: the inline mode and the display mode. The first one is used to write formulas that are part of a text. The second one is used to write expressions that are not part of a text or paragraph and are therefore put on separate lines. Let's see an example of the inline mode:
 
 In physics, the mass-energy equivalence is stated 
 by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
@@ -310,9 +310,9 @@ To print your equations in display mode use one of these delimiters: `\[ ... \]`
 Important Note: equation* environment is provided by an external package, consult the `amsmath` article.
 
  
-Many math mode commands require the amsmath package, so be sure to include it when writing math. An example is shown below of some basic math mode commands.
+Many math mode commands require the `amsmath` package, so be sure to include it when writing math. An example is shown below of some basic math mode commands.
 
-Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined an nested to write expressions such as
+Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined and nested to write expressions such as
 
 `\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]`
  
@@ -320,17 +320,36 @@ We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are pl
 
 `\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]`
 
-Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as `$\Omega$` `$\Delta$`.
+Lowercase Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as `$\Omega$` `$\Delta$`.
 
 Mathematical operators are prefixed with a backslash as `$\sin(\beta)$`, `$\cos(\alpha)$`, `$\log(x)$` etc.
 
 
+### Align
+Alternatively, there is an align environment for aligning say the equals sign, `=`, in a series of multiple equation lines.
+
+```
+\begin{align}
+ ax + b &= c     \\
+ ax     &= c - b \\
+ x      &x \frac{c-b}{a}
+\end{align}
+```
+
+You can **suppress the equation numbers** using `*`, in particular, 
+```
+\begin{align*}
+ ax + b &= c     \\
+ ax     &= c - b \\
+ x      &x \frac{c-b}{a}
+\end{align*}
+```
 
 
 
 
 ## Abstracts
-In scientific documents it's a common practice to include a brief overview of the main subject of the paper. In LaTeX there's the abstract environment for this. The abstract environment will put the text in a special format at the top of your document.
+In scientific documents, it's a common practice to include a brief overview of the main subject of the paper. In LaTeX there's an abstract environment for this. The abstract environment will put the text in a special format at the top of your document.
 
 ```
 \begin{document}
@@ -368,7 +387,7 @@ When writing the contents of your document, if you need to start a new paragraph
 
 To start a new line without actually starting a new paragraph insert a break line point, this can be done by \\ (a double backslash as in the example) or the \newline command.
 
-Care should be taken that multiple \\ or \newlines are not used to "simulate" paragraphs with larger spacing between them, as this can interfere with LaTeX's typesetting algorithms. The recommended method to do so is to keep using double blank lines to create new paragraphs without any \\, and then add \usepackage{parskip} to the preamble.
+Care should be taken that multiple \\ or \newlines are not used to "simulate" paragraphs with larger spacing between them, as this can interfere with LaTeX's typesetting algorithms. The recommended method to do so is to keep using double-blank lines to create new paragraphs without any \\, and then add \usepackage{parskip} to the preamble.
 
 You can find more information in the Paragraphs and new lines article.
 
@@ -443,7 +462,7 @@ Below you can see the simplest working example of a table
 \end{center}
 ```
 
-The tabular environment is the default LaTeX method to create tables. You must specify a parameter to this environment, in this case {c c c}. This tells LaTeX that there will be three columns and that the text inside each one of them must be centred. You can also use r to align the text to the right and l for left alignment. The alignment symbol & is used to specify the breaks in the table entries. There must always be one less alignment symbol in each line than the number of columns. To go to the next line of your table, we use the new line command \\. We wrap the entire table inside the center environment so that it will appear in the center of the page.
+The tabular environment is the default LaTeX method to create tables. You must specify a parameter to this environment, in this case {c c c}. This tells LaTeX that there will be three columns and that the text inside each one of them must be centered. You can also use r to align the text to the right and "l" for the left alignment. The alignment symbol `&` is used to specify the breaks in the table entries. There must always be one less alignment symbol in each line than the number of columns. To go to the next line of your table, we use the new line command \\. We wrap the entire table inside the center environment so that it will appear in the center of the page.
 
 
 
@@ -493,17 +512,39 @@ Below you can see a second example.
 
 
 
-Creating tables in LaTeX can be a bit tricky sometimes, so you may want to use the TablesGenerator.com online tool to export LaTeX code for tabulars. The File > Paste table data option lets you copy and paste data from spreadsheet applications.
+Creating tables in LaTeX can be a bit tricky sometimes, so you may want to use the TablesGenerator.com online tool to export LaTeX code for tabular. The File > Paste table data option lets you copy and paste data from spreadsheet applications.
 
 
 
 
 ### Booktabs Package
 
+The **booktabs** package enhances the quality of tables.  In the preamble, include: `\usepackage{booktabs}`.  Below is an example.  Full documentation can be found at the [url](https://ctan.org/pkg/booktabs?lang=en).
+
+```latex
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{lccc} 
+	\toprule
+	Date & Time  &  Average   & Standard Deviation \\ 
+	\midrule
+	    Jan 1  & 1100	& 4.7		& 0.6		\\
+	    Jan 2  & 2300	& 16.7	& 2.9		\\
+	    Jan 3  & 1400	& 11.4	& 3.5		\\
+	    Jan 4  & 1130	& 8.4		& 2.1		\\
+	    Jan 5  & 500	& 5.2		& 1.9		\\
+	    Jan 6  & 1700	& 7.9		& 2.2		\\
+	\bottomrule 
+\end{tabular} 
+\caption{This is a caption to the table}
+\label{tab:1} 
+\end{center}
+\end{table} % end the table
+```
 
 
 
-## Captions, labels and references
+## Captions, labels, and references
 You can caption and reference tables in much the same way as images. The only difference is that instead of the figure environment, you use the table environment.
 
 Table `\ref{table:data}` is an example of referenced LaTeX{} elements.
