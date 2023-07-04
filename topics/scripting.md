@@ -9,7 +9,13 @@ To view your current shell:
 echo $SHELL
 ```
 
+Here are other simple command lines that prompt the users for Fullname, then writes to terminal, "Hello ..." where ... is whatever the user enters.
 
+```zsh
+echo -n "Enter Fullname: " 
+read fullname
+echo "Hello $fullname"
+```
 
 
 ## Why shell scripting
