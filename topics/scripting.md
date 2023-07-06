@@ -5,13 +5,13 @@ Recall the __shell__ is a user interface and starts when logging in or openning 
 
 To view your current shell:
 
-```
+```zsh
 echo $SHELL
 ```
 
 Here are other simple command lines that prompt the users for Fullname, then writes to terminal, "Hello ..." where ... is whatever the user enters.
 
-```
+```zsh
 echo -n "Enter Fullname: " 
 read fullname
 echo "Hello $fullname"
@@ -70,7 +70,7 @@ Each script has purpose
 
 
 
-```
+```zsh
 #!/bin/bash
 echo "Hello ${LOGNAME}"
 echo "Today is $(date)"
@@ -85,7 +85,7 @@ w
 
 
 ## If-THEN-ELSE
-```
+```zsh
 #!/bin/zsh
 
 echo -n "Enter a number: "
@@ -104,7 +104,7 @@ date
 
 ## Loops
 
-```
+```zsh
 #!/bin/zsh
 for i in 1 2 3 4
 do
@@ -114,7 +114,7 @@ done
 
  
 
-```
+```zsh
 #!/bin/zsh
 INPUT_STRING=hello
 while [ "$INPUT_STRING" != "bye" ]
@@ -130,7 +130,7 @@ done
 
 ## Update and Upgrade Automation
 
-```
+```zsh
 #!/bin/zsh
 
 set -e
