@@ -16,6 +16,11 @@ echo -n "Enter Fullname: "
 read fullname
 echo "Hello $fullname"
 ```
+Note: The last line above can also be, `echo "Hello " $fullname`.  That is, `$fullname` can be outside the double quotes. 
+
+
+
+
 
 
 ## Why shell scripting
