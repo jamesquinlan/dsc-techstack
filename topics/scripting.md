@@ -197,4 +197,10 @@ This assignment covers the basics of creating and modifying shell scripts in zsh
 
 11. Save and execute the modified script to ensure it is working as expected.
 
+12. Write a shell script that takes an integer input from the user and prints all the even numbers between 1 and the input number.
 
+13. Write a shell script that prompts the user to enter a sentence. The script should count and display the number of vowels (a, e, i, o, u) present in the sentence.
+
+14. Write a shell script that prompts the user to enter a number. The script should calculate and print the factorial of that number using a loop.
+
+15. Write a shell script that reads a file called "numbers.txt" containing a list of integers (one per line). The script should calculate and display the sum of all the even numbers in the file.
