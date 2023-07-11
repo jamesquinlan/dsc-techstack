@@ -31,8 +31,7 @@ Three words: __repetitive task automation__.
 
 - Find out information about local or remote servers.
 - Creating a project folder and populating the files
-- Find out all failed login attempt, if login attempt are continue repeatedly from same network IP 
-	automatically block all those IPs accessing your network/service via firewall.
+- Find out all failed login attempt, if login attempt are continue repeatedly from same network IP automatically block all those IPs accessing your network/service via firewall.
 
 
 
@@ -64,6 +63,10 @@ Shell scripts can contain:
 - Functions - add frequent actions together via functions. For example, /etc/init.d/functions file contains functions to be used by most or all system shell scripts in the /etc/init.d directory.
 
 - Control flow statments such as if..then..else or shell loops to perform repeated actions.
+
+
+
+
 
 Each script has purpose
 
