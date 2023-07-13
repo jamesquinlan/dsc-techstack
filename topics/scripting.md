@@ -23,7 +23,7 @@ Note: The last line above can also be, `echo "Hello " $fullname`.  That is, `$fu
 
 
 
-## Why shell scripting
+## Why shell scripting?
 
 Three words: __repetitive task automation__.
 
