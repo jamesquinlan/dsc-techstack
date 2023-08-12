@@ -33,20 +33,21 @@ After this course, students will be able to:
 
 1. [VIM](topics/vim.md)
 2. [Git](topics/git.md)
-<!-- 3. [GitHub](topics/github.md) -->
 3. [Virtualization](topics/vm.md)
 4. [Unix](topics/unix.md)
-<!-- 6. [R](topics/r.md) -->
 5. [Scripting](topics/scripting.md)
 6. [File permissions](topics/chmod.md)
 7. [IDE (VSCode)](topics/vscode.md)
 8. [AWS](topics/aws.md)
 9. [LaTeX](topics/latex.md)
 10. [Data Ethics](topics/ethics.md)
-<!-- 10. [Privacy and Security](topics/vpn.md) -->
 11. [Markdown](topics/markdown.md)
 13. [Desmos](topics/desmos.md)
 12. [LinkedIn](topics/linkedin.md)
+
+<!-- 3. [GitHub](topics/github.md) -->
+<!-- 6. [R](topics/r.md) -->
+<!-- 10. [Privacy and Security](topics/vpn.md) -->
 
 
 ## Contributing guidelines
