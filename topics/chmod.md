@@ -1,7 +1,7 @@
 # Change File Permissions
 
 
-This lesson covers the basics of using `chmod` to set file and directory permissions. Remember to use chmod carefully, as modifying permissions can have significant security implications.
+This lesson covers using `chmod` to set file and directory permissions. Remember to use chmod carefully, as modifying permissions can have significant security implications.
 
 
 `chmod` is a command in Unix-based operating systems that allows users to change the permissions of a file or directory. The name "chmod" stands for "change mode," and it's a powerful tool for managing file permissions in a secure way.
@@ -53,7 +53,7 @@ Here's an example of how to use `chmod`:
 chmod 750 filename.
 ```
 
-5. Use the `ls -l` command again to verify that the permissions have been set correctly.
+5. Again, Use the `ls -l` command to verify that the permissions have been set correctly.
 
 
 
@@ -64,7 +64,7 @@ chmod 750 filename.
 
 ## Assignment Exercises
 
-This assignment covers the basics of using chmod to set file and directory permissions. Remember to use chmod carefully, as modifying permissions can have significant security implications. Good luck with your chmod practice!
+This assignment covers using chmod to set file and directory permissions. Remember to use chmod carefully, as modifying permissions can have significant security implications. Good luck with your chmod practice!
 
 
 1. Open a terminal window and navigate to a directory containing one or more files.
@@ -75,14 +75,15 @@ This assignment covers the basics of using chmod to set file and directory permi
 
 4. Use the chmod command to set the permissions for that file. For example, to give the owner read and write permissions, the group read permission, and others no permission, you would enter: `chmod 640 filename`.
 
-5. Use the `ls -l` command again to verify that the permissions have been set correctly.
+5. Again, Use the `ls -l` command to verify that the permissions have been set correctly.
 
 6. Create a new file in the same directory and set its permissions to give the owner read, write, and execute permissions, the group read and execute permissions, and others no permission. Use the `chmod` command to set the permissions.
 
-7. Use the `ls -l` command to verify that the permissions have been set correctly for the new file.
+7. Use the `ls -l` command to verify that the new file's permissions have been set correctly.
 
 8. Modify the permissions of a directory in the same directory to give the owner, group, and others read and execute permissions. Use the chmod command to set the permissions.
 
-9. Use the ls -l command to verify that the permissions have been set correctly for the directory.
+9. Use the ls -l command to verify that the directory's permissions have been set correctly.
+
 
 
