@@ -33,18 +33,41 @@ After this course, students will be able to:
 
 1. [VIM](topics/vim.md)
 2. [Git](topics/git.md)
-3. [GitHub](topics/github.md)
+<!-- 3. [GitHub](topics/github.md) -->
 4. [Virtualization](topics/vm.md)
 5. [Unix](topics/unix.md)
-6. [R](topics/r.md)
+<!-- 6. [R](topics/r.md) -->
 7. [Scripting](topics/scripting.md)
+8. [File permissions](topics/chmod.md)
+8. [IDE (VSCode)](topics/vscode.md)
 8. [AWS](topics/aws.md)
 9. [LaTeX](topics/latex.md)
-10. [Privacy and Security](topics/vpn.md)
+10. [Data Ethics](topics/ethics.md)
+<!-- 10. [Privacy and Security](topics/vpn.md) -->
 11. [Markdown](topics/markdown.md)
-12. [LinkedIn](topics/linkedin.md)
 13. [Desmos](topics/desmos.md)
+12. [LinkedIn](topics/linkedin.md)
 
+
+## Contributing guidelines
+
+All contributions are more than welcomed. Contributions may close an issue, fix a bug (reported or not reported), add new design blocks, improve the existing code, add new feature, and so on. In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation. [Read the full Code of Conduct](https://github.com/froala/design-blocks/blob/dev/CODE_OF_CONDUCT.md).
+
+The `dev` branch is the default and base branch for the project. It is used for development and all Pull Requests should go there.
+
+
+
+#### Get code
+
+```bash
+git clone https://github.com/jamesquinlan/dsc-techstack.git
+cd dsc-techstack
+```
+
+
+## Copyright and License
+
+Code and documentation copyright 2023 [Quinlan](https://github.com/jamesquinlan). Code released under the [MIT License](https://github.com/jamesquinlan/dsc-techstack/blob/main/LICENSE).
 
 
 ## References
