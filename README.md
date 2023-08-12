@@ -1,28 +1,28 @@
 # DSC-TECHSTACK
 
-TechStack topics for computational (and data) scientists.  List of topics (see topics folder) is not exhaustive.  Course inspired by (i) a summer course run by [Dr. Ed Overman at Ohio State University](https://math.osu.edu/people/overman.2) and (ii) [MIT - The Missing Semester](https://missing.csail.mit.edu).
+TechStack topics for computational (and data) scientists.  The list of topics (see topics folder) is incomplete.  The course was inspired by (i) a summer course run by [Dr. Ed Overman at Ohio State University](https://math.osu.edu/people/overman.2) and (ii) [MIT - The Missing Semester](https://missing.csail.mit.edu).
 
 
 
 
 ## Course description
 
-This course facilitates the development of proficiency with the tools of computational and data science. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include but are not limited to the command-line, the use of text editors, and version control systems. Mastering such tools enables one to become more efficient at the problem-solving process and provides unique knowledge and skills.
+This course facilitates the development of proficiency with computational and data science tools. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include but are not limited to the command line, the use of text editors, and version control systems. Mastering such tools enables one to become more efficient at problem-solving and provides unique knowledge and skills.
 
 
 
 ## Learning Outcomes
-At the conclusion of this course students will be able to:
+After this course, students will be able to:
 
-* navigate file directory from the command-line;
+* navigate the file directory from the command line;
 * add, remove, and rename files and directories at the CLI;
 * clone a repository; add, commit, and push files to repository; create a pull request;
 * typeset mathematics;
-* develop professional profile;
+* develop a professional profile;
 * create, edit, and save text files;
-* obtain data from website via webscraping;
+* obtain data from the website via web scraping;
 * visualize and manipulate geometrical objects;
-* perform basic data wranngling using R;
+* perform basic data wrangling using R;
 * consider data ethics issues;
 * differentiate and integrate functions unable to do by hand; 
 * examine computer security and privacy issues.
@@ -49,8 +49,7 @@ At the conclusion of this course students will be able to:
 
 ## References
 
-```bibtex
-
+```BibTeX
 @misc{kernighan2020c,
   title={The C programming language.},
   author={Kernighan, Brian W and Ritchie, Dennis M},
