@@ -34,12 +34,12 @@ After this course, students will be able to:
 1. [VIM](topics/vim.md)
 2. [Git](topics/git.md)
 <!-- 3. [GitHub](topics/github.md) -->
-4. [Virtualization](topics/vm.md)
-5. [Unix](topics/unix.md)
+3. [Virtualization](topics/vm.md)
+4. [Unix](topics/unix.md)
 <!-- 6. [R](topics/r.md) -->
-7. [Scripting](topics/scripting.md)
-8. [File permissions](topics/chmod.md)
-8. [IDE (VSCode)](topics/vscode.md)
+5. [Scripting](topics/scripting.md)
+6. [File permissions](topics/chmod.md)
+7. [IDE (VSCode)](topics/vscode.md)
 8. [AWS](topics/aws.md)
 9. [LaTeX](topics/latex.md)
 10. [Data Ethics](topics/ethics.md)
