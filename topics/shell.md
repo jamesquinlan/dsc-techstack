@@ -351,6 +351,21 @@ ping google.com
 
 
 
+## Special Characters
+
+* `~` is the home directory
+* `.` is current directory
+* `..` is the parent directory
+* `/` is a path directory separator
+* `#` is a comment
+* `?` single character wildcard
+* `*` wildcard
+* `;` shell command separator
+* `<` input redirect
+* `>` output redirect
+* `|` pipe
+* `$` variable expression
+
 ## Assignment Exercises
 
 This assignment covers the basics of using Unix shell commands to navigate directories, create, edit, copy, and delete files and directories. It also introduces the use of some commonly used commands such as `ls`, `cd`, `pwd`, `mkdir`, `touch`, `echo`, `cat`, `cp`, `rm`, and `rmdir`. Have fun exploring the power of Unix shell!
