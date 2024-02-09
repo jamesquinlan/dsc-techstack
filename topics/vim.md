@@ -72,20 +72,16 @@ You should be in normal mode most of the time. To enter normal mode, press the `
 
 
 
-
-### Command mode
-The default mode.  Commands include: commands in this mode like copy, paste, delete, replace, etc.  Vim command without a colon are excuted in command mode.
-
-
 ### Insert mode
-Used to enter and edit text.  The current mode is show at the bottom left corner of the window.   To switch from default command to insert mode press ```i``` key. 
+Used to enter and edit text.  The current mode is shown at the bottom left corner of the window.   To switch from default command to insert mode press ```i``` key. 
  
 
-To exit insert mode use the escape key, ```esc```.  
+To exit insert mode, use the escape key, ```esc```.  
 
 
 ### Command mode
 
+The default mode.  Commands include commands in this mode like copy, paste, delete, replace, etc.  Vim commands without a colon are executed in command mode.
 Enter command mode with ```:``` from Normal mode.  Functionalities in this mode include opening, saving, and closing files.  Common commands in this mode include:
 - ```:q``` quit and close window
 - ```:w``` save (write) buffer
@@ -168,7 +164,7 @@ To go into edit mode: press ESC and type I
 
 To go into command mode: press ```ESC```
 
-To save a file press ESC and type 
+To save a file, press `ESC` and type 
 ```
 :w fileName
 ```
@@ -239,7 +235,7 @@ Now, enter:
 :X
 ```
 
-Note that Vim is *case-sensitive*, so the `X` must be capitalized.
+Vim is *case-sensitive*, so the `X` must be capitalized.
 
 Vim will then ask you to create an encryption key, which is essentially the password you'll use to encrypt and decrypt this text file. If you forget this key, then you'll be unable to access your file's contents, so make sure you use something memorable!
 
