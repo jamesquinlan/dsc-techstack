@@ -2,18 +2,18 @@
 
 Git is a *version control system* (VCS).  
 
-Git keeps track of how our project files change over time and tracks file modifications.  It enables reverting back to a specific version of the file in history.   Git also allows several individuals to **contribute and collabore on projects**.  Each developer has their version of the project on their local computer. The different versions of the project can later be merged into the project's main version if the edits are acceptable.
+Git keeps track of how our project files change over time and tracks file modifications.  It enables reverting to a specific version of the file in history.   Git also allows several individuals to **contribute and collaborate on projects**.  Each developer has their version of the project on their local computer. If the edits are acceptable, the different project versions can later be merged into the project's main version.
 
-Although there are graphical user interfaces (GUI) to interact with Git, it is primarily used via the command-line interface (CLI).
+Although there are graphical user interfaces (GUI) to interact with Git, they are primarily used via the command-line interface (CLI).
 
-The url of the Git homepage is: [https://git-scm.com/](https://git-scm.com/)
+The URL of the Git homepage is: [https://git-scm.com/](https://git-scm.com/)
 
 :heavy_exclamation_mark: Git is **not** Github
 
 
 ### Must Know Technology
 
-Git is one of the most important skills for any data scientist or software developer nowadays.  It is a _must_ have on your resume!
+Git is one of the most essential skills for any data scientist or software developer nowadays.  It is a _must_ have on your resume!
 
 
 
@@ -33,11 +33,11 @@ After installation, start your terminal and type the following command to verify
 git --version
 ```
 
-If everything went well, it should return the Git version that is installed on your computer.
+If everything goes well, it should return the Git version installed on your computer.
 
-If you are using a Mac or Linux machine, then you can utilize the default zsh terminal that comes pre-installed on your machine.
+If you are using a Mac or Linux machine, you can utilize the default zsh terminal that comes pre-installed on your machine.
 
-If you are using Windows, you can use its built-in Powershell terminal, or the Git zsh terminal which is bundled with the Git installation. For detailed windows Git and Git zsh install instructions, check out this blog post: [https://zarkom.net/blogs/how-to-install-git-and-git-bash-on-windows-9140](https://zarkom.net/blogs/how-to-install-git-and-git-bash-on-windows-9140)
+If you are using Windows, you can use its built-in Powershell terminal or the Git zsh terminal, which is bundled with the Git installation. For detailed Windows Git and Git zsh install instructions, check out this blog post: [https://zarkom.net/blogs/how-to-install-git-and-git-bash-on-windows-9140](https://zarkom.net/blogs/how-to-install-git-and-git-bash-on-windows-9140)
 
 
 ### Configuring Your Name & Email
@@ -70,7 +70,7 @@ There are two types of Git repositories:
 
 - **Local repository** - stored on a personal computer.  
 
-- **Remote repository** -  stored outside the local system, usually on a remote server or cloud.   Remote repo necessary while several members are working on a project.  The remote repo is where the project code resides, changes are pushed, and pull other members' feature additions.
+- **Remote repository**—stored outside the local system, usually on a remote server or cloud. A remote repo is necessary while several members are working on a project. It is where the project code resides, changes are pushed, and other members' feature additions are pulled.
 
 
 > NOTE: We will start by working with local repositories.
@@ -86,7 +86,7 @@ There are two types of Git repositories:
 
 # 3. Initializing a repository
 
-To initialize a git repo, from the project's main directory, execute the ```init``` command:
+To initialize a git repo from the project's *main* directory, execute the ```init``` command:
 
 ```zsh
 git init
@@ -109,13 +109,13 @@ git status
 The command produces the following results: 
 
 ```zsh
-On branch master
+On branch main
 No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
 
-This command should be the most frequently used. In particular, it tells us which files have been modified, which files have been monitored, and so on.   
+This command should be the most frequently used. It tells us which files have been modified, which files have been monitored, and so on.   
 
 
 :heavy_exclamation_mark:  Run `git status` __frequently__!
@@ -131,7 +131,7 @@ This command should be the most frequently used. In particular, it tells us whic
 
 ## Example: 
 
-Create a file to track.  Everyone knows how to create a file and has done so many times.  Here is a method using `touch` command (_touch_ edits the timestamp, thus if no file exists, it creates one the first time).
+Create a file to track. Everyone knows how to create a file and has done so many times. Here is a method using the `touch` command (_touch_ edits the timestamp; thus, if no file exists, it creates one the first time).
 
 ```zsh
 touch index.html
@@ -146,7 +146,7 @@ git status
 The result of issuing the `git status` command now is:
 
 ```zsh
-On branch master
+On branch main
 No commits yet
 Untracked files:
 	(use "git add <file>..." to include in what will be committed)
@@ -172,13 +172,13 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Committing is the process in which the changes are *officially* added to the Git repository.
 
-__Checkpoints__, or snapshots of your project in its present state, are what **commits** are in Git.  In other words, in a commit, we effectively store the current version of our code. Thus, we can add as many commits to the commit history as we need. In addition, we can jump back and forth between commits to observe the different versions of our project code. Thus, git enables monitoring the changes effectively and track the project's development. 
+__Checkpoints__, or snapshots of your project's present state, are what **commits** are in Git. In other words, a commit effectively stores the current version of our code. Thus, we can add as many commits to the commit history as we need. In addition, we can jump back and forth between commits to observe the different versions of our project code. Thus, git enables the effective monitoring of changes and the tracking of the project's development. 
 
 Commits are frequently made at logical moments in developing a project, such as when specified contents, features, or revisions have been included (like new functionalities or bug fixes, for example). 
 
-We must first place our code in the **staging area** before we can commit it. Based on the output of the git status command, we may move the untracked project files to the **staging area**.
+Before we can commit our code, we must first place it in the staging area. Based on the output of the git status command, we may move the untracked project files to the staging area.
 
-Identify any changes to the (tracked) files using `git status` before re-adding them to the staging area.
+Using `git status`, identify any changes to the (tracked) files before re-adding them to the staging area.
 
 
 ## 4.2. Staging files
@@ -272,11 +272,11 @@ To see all the commits that were made for our project, you can use the following
 git log
 ```
 
-The logs will show details for each commit, like the author name, the generated hash for the commit, date and time of the commit, and the commit message that we provided.  For example, the commit on the `index.html` file above, we get
+The logs will show details for each commit, like the author name, the generated hash for the commit, the date and time of the commit, and the commit message provided.  For example, in the commit on the `index.html` file above, we get
 
 ```zsh
-commit 9a38190bbb0fa3f07c63338ba816b448d708acf7 (HEAD -> master)
-Author: jamesquinlan <jquinlan@une.edu>
+commit 9a38190bbb0fa3f07c63338ba816b448d708acf7 (HEAD -> main)
+Author: yourname <you@email.com>
 Date:   Wed Jun 9 13:03:39 2021 -0400
 ```
 
@@ -284,7 +284,7 @@ Date:   Wed Jun 9 13:03:39 2021 -0400
 
 ### Example (cont.)
 
-Create new files for the project
+Create new files for the project.
 
 ```zsh
 touch app.js
@@ -307,7 +307,7 @@ Check the status (results shown below the command `git status`):
 git status
 
 
-On branch master
+On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -321,17 +321,17 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Note the two new untracked files that have not been staged for commit along with the modification of `index.html`.  
+Note the two new untracked files that have not been staged for commit and the modification of `index.html`.  
 
 
-We will stage (add) the modified `index.html` file as well as the `app.js` file. As always, check the status.  The results are shown under the command.  The two files are ready for commit while `styles.css` remains untracked.   
+We will stage (add) the modified `index.html` file and the `app.js` file. As always, check the status.  The results are shown under the command.  The two files are ready for commit while `styles.css` remains untracked.   
 
 ```zsh
 git add index.html app.js
 git status
 
 
-On branch master
+On branch main
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	new file:   app.js
@@ -348,27 +348,27 @@ Commit the files.
 ```zsh
 git commit -m "add app logic"
 
-[master 1cf1223] add app logic
+[main 1cf1223] add app logic
  2 files changed, 17 insertions(+)
  create mode 100644 app.js
 ```
 
 
 
-If we check the log we see two commits in chronlogical order (last first).
+If we check the log, we see two commits in chronological order (last first).
 
 ```zsh
 git log
 
-commit 1cf122358a07ebeb2fe544705356da9c7f759960 (HEAD -> master)
-Author: jamesquinlan <jquinlan@une.edu>
-Date:   Wed Jun 9 17:21:34 2021 -0400
+commit 1cf122358a07ebeb2fe544705356d5678f759960 (HEAD -> main)
+Author: yourname <you@email.com>
+Date:   Wed Jun 9 17:21:34 2023 -0400
 
     add app logic
 
-commit 9a38190bbb0fa3f07c63338ba816b448d708acf7
-Author: jamesquinlan <jquinlan@une.edu>
-Date:   Wed Jun 9 13:03:39 2021 -0400
+commit 9a38190bbb0fa3f07c69861ba816b448d708acf7
+Author: yourname <you@email.com>
+Date:   Wed Jun 9 13:03:39 2023 -0400
 
     create index file
 ```
@@ -381,7 +381,7 @@ Date:   Wed Jun 9 13:03:39 2021 -0400
 
 
  
-## 4.4.1 Revert to previous state
+## 4.4.1 Revert to the previous state
 
 To go back to a previous state of your project code that you committed, you can use the following command where ```<commit-hash>``` is the hash from the ```git log```:
 
@@ -393,7 +393,7 @@ git checkout <commit-hash>
 To go back to the latest commit (the newest version of our project code), you can type this command:
 
 ```zsh
-git checkout master
+git checkout main
 ```
 
 
@@ -401,7 +401,7 @@ git checkout master
 
 
 ### Another commit
-To create a new commit, you will need to repeat the process of adding files to the staging area and then committing them after. Again, it's very useful to use the **git status** command to see which files were modified, staged, or untracked.
+To create a new commit, you will need to repeat the process of adding files to the staging area and then committing them. Again, it's handy to use the `git status` command to see which files were modified, staged, or untracked.
 
 
 
@@ -417,9 +417,9 @@ To create a new commit, you will need to repeat the process of adding files to t
 
 ## 4.5. Ignoring files
 
-To ignore files that you don't want to be tracked or added to the staging area, you can create a file called `.gitignore` in your main project folder.
+To ignore files you don't want to be tracked or added to the staging area, create a file called `.gitignore` in your main project folder.
 
-Inside of that file, you can list all the file and folder names that you do not want to track (each ignored file and folder should go to a new line inside the **.gitignore** file).
+Inside that file, you can list all the file and folder names that you do not want to track (each ignored file and folder should be added to a new line inside the **.gitignore** file).
 
 You can read an article about ignoring files [on this link](https://help.github.com/en/articles/ignoring-files).  See also this [blog post](https://www.pluralsight.com/guides/how-to-use-gitignore-file).
 
@@ -458,11 +458,11 @@ https://linuxize.com/post/gitignore-ignoring-files-in-git/
 
 A **branch** could be interpreted as an individual timeline of our project commits.
 
-With Git, we can create many of these alternative environments (i.e., we can create different **branches**) so other versions of our project code can exist and be tracked in parallel.
+With Git, we can create many of these alternative environments (i.e., different **branches**) so that other versions of our project code can exist and be tracked in parallel.
 
-That allows us to add new (experimental, unfinished, and potentially buggy) features in separate branches without touching the '*official'* stable version of our project code (usually kept on the **master** branch).
+That allows us to add new (experimental, unfinished, and potentially buggy) features in separate branches without touching the '*official'* stable version of our project code (usually kept on the **main** branch).
 
-When we initialize a repository and start making commits, they are saved to the **master** branch by default.
+Initializing a repository and making commits are saved to the **main** branch by default.
 
 
 
@@ -477,7 +477,7 @@ git branch <new-branch-name>
 
 The new branch that gets created will be the reference to the current state of your repository.
 
-It is good to create a **development** branch to improve your code, add new experimental features, and similar. Then, after developing and testing these new features to ensure they do not have any bugs and can be used, you can merge them to the master branch.
+It is good to create a **development** branch to improve your code, add new experimental features, and similar. Then, after developing and testing these new features to ensure they do not have any bugs and can be used, you can merge them to the main branch.
 
 
 
@@ -502,10 +502,10 @@ git checkout -b <new-branch-name>
 
 To list the branches for your project, use this command: `git branch`
 
-To go back to the **master** branch, use this command:
+To go back to the **main** branch, use this command:
 
 ```zsh
-git checkout master
+git checkout main
 ```
 
 
@@ -514,11 +514,11 @@ git checkout master
 
 You can merge branches in situations where you want to implement the code changes that you made in an individual branch to a different branch.
 
-For example, after you fully implemented and tested a new feature in your code, you would want to merge those changes to the stable branch of your project (which is usually the default **master** branch).
+For example, after you fully implemented and tested a new feature in your code, you would want to merge those changes to the stable branch of your project (which is usually the default **main** branch).
 
 To merge the changes from a different branch into your current branch, you can use this command:
 
-To merge changes from branch <branch-name> to master, switch to master and type:
+To merge changes from branch <branch-name> to main, switch to main and type:
 	
 ```zsh
 git merge <branch-name>
@@ -623,10 +623,10 @@ git checkout newbranch
 
 10. Make changes, add, and commit to the new branch.  
 
-11. Merge newbranch into master branch.  First, switch to master branch.
+11. Merge newbranch into main branch.  First, switch to main branch.
 
 ```
-git checkout master
+git checkout main
 git merge newbranch
 ```
 
@@ -734,15 +734,15 @@ This assignment covers the basics of using Git for version control, including cr
 
 8. Use the `git add` and `git commit` commands to stage and commit the changes to the new branch.
 
-9. Switch back to the master branch using the `git checkout` command.
+9. Switch to the main branch using the `git checkout` command.
 
-10. Merge the changes from the new branch into the master branch using the git merge command.
+10. Merge the changes from the new branch into the main branch using the git merge command.
 
-11. Use the `git log` command to view the commit history of the repository.
+11. Use the `git log` command to view the repository's commit history.
 
 12. Use the `git clone` command to clone the repository to a new directory on your local machine.
 
-13. Create a new file in the cloned repository and stage and commit the changes using the `git add` and `git commit` commands.
+13. Create a new file in the cloned repository, stage it, and commit the changes using the `git add` and `git commit` commands.
 
 14. Use the `git push` command to push the changes to a remote Git repository (e.g., on GitHub or GitLab).
 
@@ -750,7 +750,7 @@ This assignment covers the basics of using Git for version control, including cr
 
 16. Use the `git fetch` command to fetch changes from the remote repository without merging them into your local repository.
 
-17. Use the `git stash` command to temporarily save changes that are not ready to be committed.
+17. Use the `git stash` command to save changes that are not ready to be committed temporarily.
 
 18. Use the `git cherry-pick` command to apply a specific commit from one branch to another.
 
