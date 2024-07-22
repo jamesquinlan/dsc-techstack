@@ -1,10 +1,10 @@
 # Change File Permissions
 
 
-This lesson covers using `chmod` to set file and directory permissions. Remember to use chmod carefully, as modifying permissions can have significant security implications.
+This lesson covers using `chmod` to set file and directory permissions. Remember to use `chmod` carefully, as modifying permissions can have significant security implications.
 
 
-`chmod` is a command in Unix-based operating systems that allows users to change the permissions of a file or directory. The name "chmod" stands for "change mode," and it's a powerful tool for managing file permissions in a secure way.
+`chmod` is a command in Unix-based operating systems that allows users to change the permissions of a file or directory. The name "chmod" stands for "change mode," it's a powerful tool for securely managing file permissions.
 
 There are three basic types of permissions for a file or directory:
 
@@ -12,16 +12,38 @@ There are three basic types of permissions for a file or directory:
 
 2. Write (`w`) permission: Allows a user to modify the contents of a file or directory.
 
-3. Execute (`x`) permission: Allows a user to run a file or access a directory's contents.
+3. Execute (`x`) permission: This permission allows users to run a file or access a directory's contents.
+
+
+
+
+The general syntax is:
+```zsh
+chmod options permissions filename
+```
+
+
+
+
+
+### Change execution permission
+Often, we need to set permission to execute.  In particular, writing a script file (or Python script) must be executed. The easiest way is to use the `+x`:
+
+```zsh
+chmod +x myfile
+```
+
+
+
 
 
 Each permission can be assigned to three groups of users:
 
 1. Owner (`u`): The user who owns the file or directory.
 
-2. Group (`g`): A group of users who have access to the file or directory.
+2. Group (`g`): Users with access to the file or directory.
 
-3. Others (`o`): Any user who is not the owner or a member of the group.
+3. Others (`o`): Any user not the owner or a group member.
 
 
 
@@ -39,6 +61,17 @@ The `chmod` command uses a numerical value to represent the permissions for each
 
 To set permissions for a file or directory using `chmod`, you need to specify the numerical value for each group of users and the file or directory you want to modify.
 
+
+
+For example, 
+
+```zsh
+chmod u=rwx,g=rx,o=r filename
+```
+
+
+
+
 Here's an example of how to use `chmod`:
 
 1. Open a terminal window and navigate to the directory that contains the file you want to modify.
@@ -47,13 +80,12 @@ Here's an example of how to use `chmod`:
 
 3. Determine the permissions you want to set for the file or directory.
 
-4. Use the chmod command to set the permissions. For example, to give the owner read, write, and execute permissions, the group read permission, and others no permission, you would enter: 
+4. Use the `chmod` command to set the permissions. For example, to give the owner read, write, and execute permissions, the group read permission, and others no permission, you would enter: 
 
-```zsh
-chmod 750 filename.
-```
-
-5. Again, Use the `ls -l` command to verify that the permissions have been set correctly.
+	```zsh
+	chmod 750 filename.
+	```
+5. Use the `ls -l` command to verify that the permissions have been set correctly.
 
 
 
@@ -64,7 +96,7 @@ chmod 750 filename.
 
 ## Assignment Exercises
 
-This assignment covers using chmod to set file and directory permissions. Remember to use chmod carefully, as modifying permissions can have significant security implications. Good luck with your chmod practice!
+This assignment covers using `chmod` to set file and directory permissions. Remember to use `chmod` carefully, as modifying permissions can have significant security implications. Good luck with your `chmod` practice!
 
 
 1. Open a terminal window and navigate to a directory containing one or more files.
@@ -73,7 +105,7 @@ This assignment covers using chmod to set file and directory permissions. Rememb
 
 3. Determine the permissions you want to set for one of the files.
 
-4. Use the chmod command to set the permissions for that file. For example, to give the owner read and write permissions, the group read permission, and others no permission, you would enter: `chmod 640 filename`.
+4. Use the `chmod` command to set the permissions for that file. For example, to give the owner read and write permissions, the group read permission, and others no permission, you would enter: `chmod 640 filename`.
 
 5. Again, Use the `ls -l` command to verify that the permissions have been set correctly.
 
@@ -81,9 +113,9 @@ This assignment covers using chmod to set file and directory permissions. Rememb
 
 7. Use the `ls -l` command to verify that the new file's permissions have been set correctly.
 
-8. Modify the permissions of a directory in the same directory to give the owner, group, and others read and execute permissions. Use the chmod command to set the permissions.
+8. Modify the permissions of a directory in the same directory to give the owner, group, and others read and execute permissions. Use the `chmod` command to set the permissions.
 
 9. Use the ls -l command to verify that the directory's permissions have been set correctly.
 
-
-
+ 
+ 
