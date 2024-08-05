@@ -12,7 +12,7 @@ There are three basic types of permissions for a file or directory:
 
 2. Write (`w`) permission: Allows a user to modify the contents of a file or directory.
 
-3. Execute (`x`) permission: This permission allows users to run a file or access a directory's contents.
+3. Execute (`x`) permission: This allows users to run a file or access a directory's contents.
 
 
 

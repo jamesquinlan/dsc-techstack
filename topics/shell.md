@@ -1,15 +1,15 @@
 # Introduction to UNIX
 
-UNIX is a multiuser, multitasking operating system developed in the 1970s by Bell Labs.  Licensed in 1975, UC Berkeley made enhancements and called it BSD (Berkeley Software Distribution) and distributed it to universities.   
+UNIX is a multiuser, multitasking operating system developed in the 1970s by Bell Labs. Licensed in 1975, UC Berkeley made enhancements, called it BSD (Berkeley Software Distribution), and distributed it to universities.   
 
 
 ## UNIX philosophies
 
-* Do one thing and do it well - Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
-* Everything is file - Ease of use and security is offered by treating hardware as a file.
-* Store data and configuration in flat text files - Text file is a universal interface. Easy to create, backup and move to another system.
-* Use shell scripts to increase leverage and portability - Use shell script to automate common tasks across various UNIX / Linux installations.
-* Chain programs together to complete complex task - Use shell pipes and filters to chain small utilities that perform one task at time.
+* Do one thing and do it well - Write programs that do one thing well. Write programs to work together. Write programs to handle text streams because that is a universal interface.
+* Everything is a file - Ease of use and security are offered by treating hardware as a file.
+* Store data and configuration in flat text files. Text files are a universal interface that is easy to create, back up, and move to another system.
+* Use shell scripts to increase leverage and portability - Use shell scripts to automate common tasks across various UNIX / Linux installations.
+* Chain programs together to complete complex tasks—Use shell pipes and filters to chain small utilities that perform one task at a time.
 * Choose portability over efficiency.
 * Keep it Simple.
 
@@ -25,6 +25,13 @@ The __file__ is the unit of storage in UNIX.  A __directory__ (_folder_ in moder
 ![UNIX Directory Structure](images/filesystem.png)
 
 
+* `lib` - 
+* `usr` - 
+* `bin` - binaries (applications)
+* `etc` - 
+* `home` - 
+* `dev` - devices (e.g., mouse, keyboard, ...)
+* `sbin` - secure binaries
 
 
 
@@ -34,13 +41,13 @@ The __file__ is the unit of storage in UNIX.  A __directory__ (_folder_ in moder
 
 # The Unix Shell
 
-The shell is a command line interface (CLI)  with the UNIX system — the middleman between you and the kernel. It accepts a command, interprets the command, executes the command, and then waits for another command. The shell displays a prompt to notify you that it is ready to accept your command. This prompt in the shell window  looks something like: 
+The shell is a command line interface (CLI)  with the UNIX system — the middleman between you and the kernel. It accepts a command, interprets it, executes it, and then waits for another command. The shell displays a prompt to notify you that it is ready to accept your command. This prompt in the shell window  looks something like this: 
 
 
 ![zsh Terminal Window](images/shell.png)
 
 
-There are several shell renditions starting with the (Ken) Thompson shell, the first shell Bell Laboratories (1971).  Others include Bourne shell (__sh__), C shell (__csh__), and Korn shell (__ksh__).  Two very popular shells are the Bourne _Again_ Shell (__bash__) and the Z shell (__zsh__).  
+Several shell renditions start with the (Ken) Thompson shell, the first shell of Bell Laboratories (1971). Others include the Bourne shell (__sh__), C shell (__csh__), and Korn shell (__ksh__). Two popular shells are the Bourne _Again_ Shell (__bash__) and the Z shell (_zsh__).  
 
 Although most shell commands are the same, there are some differences.  The commands presented below assume the Z-shell.  
 
@@ -56,7 +63,7 @@ echo "${ZSH_VERSION}"
 
 Three parts to a command:
 1. The command
-2. Options that typically start with a - or --
+2. Options, typically start with a `-` or `--`
 3. Argument
 
 
@@ -74,11 +81,13 @@ man [command]
 # Directory Commands
 
 ### Print Working Directory
+The `pwd` utility writes the absolute pathname of the current working directory to the standard output.
+
 ```
 $ pwd
 ```
 
-### List contents of directory.  
+### List directory contents  
 
 The syntax for the ls command is given below. 
 
@@ -95,13 +104,13 @@ $ ls [options] [names]
 | -d	|   Displays only directories | 
 | -f    | Interprets each name as a directory, not a file|
 | -F	| Flags filenames |
-| -g	| Displays the long format listing, but exclude the owner name|
+| -g	| Displays the long format listing but excludes the owner name|
 | -i	| Displays the inode for each file|
 | -l	| Displays the long format listing|
 | -L	| Displays the file or directory referenced by a symbolic link|
 | -m	| Displays the names as a comma-separated list|
 | -n	| Displays the long format listing, with GID and UID numbers|
-| -o	| Displays the long format listing, but excludes group name |
+| -o	| Displays the long format listing but excludes group name |
 | -p	| Displays directories with / |
 | -q	| Displays all nonprinting characters as ?|
 | -r    | Displays files in reverse order |
@@ -112,7 +121,7 @@ $ ls [options] [names]
 | -1    | Displays each entry on a line |
 
 
-__Example__: Dot files are typically configuration files and by default are hidden.  To view _all_ files in a directory, 
+__Example__: Dot files are typically configuration files and, by default, are hidden.  To view _all_ files in a directory, 
 
 ```
 $ ls -a
@@ -184,14 +193,39 @@ $ mv chap*.pdf Directory/
 
 
 
----
+--
+
 
 
 ## Permissions
 
 User - Group - World!
 
-Each number is binary.  $111_2 = 7$  1 = on, 0 = off.
+There are three basic types of permissions for a file or directory:
+
+1. Read (`r`) permission: Allows a user to view the contents of a file or directory.
+2. Write (`w`) permission: Allows a user to modify the contents of a file or directory.
+3. Execute (`x`) permission: This allows users to run a file or access a directory's contents.
+
+
+The general syntax is:
+```zsh
+chmod options permissions filename
+```
+
+
+
+
+
+The `chmod` command uses a numerical value to represent the permissions for each group of users:
+
+* Read permission is represented by `4`
+* Write permission is represented by `2`
+* Execute permission is represented by `1`
+* No permission is represented by `0`
+
+Each number is binary. For example, $111_2 = 7$, where $1$ = on and $0$ = off for "User—Group—World."
+For example, 740 gives read-write-execute permissions to "User," read to "Group," and no access to "World."
 
 ```
 chmod 740 filename
@@ -199,12 +233,21 @@ chmod 740 filename
 
 ```
 # Set execute permission
-chmod 0755 script.sh
+chmod 755 script.sh
 
 # Allow only the owner to execute
-chmod 0700 script.sh
+chmod 700 script.sh
 ```
+ 
 
+
+### Alternative method
+
+Often, we need to set permission to execute.  In particular, writing a script file (or Python script) must be executed. The easiest way is to use the `+x`:
+
+```zsh
+chmod +x myfile
+```
 
 
 
@@ -212,7 +255,7 @@ chmod 0700 script.sh
 
 ## Package managers
 
-Package managers handle processes for a computer's operating system including installing, upgrading, configuring, and removing computer programs.  Depending on your distribution (e.g., Arch Linux (pacman), macOS (brew), Debian (apt), common package managagers include:
+Package managers handle computer operating system processes, including installing, upgrading, configuring, and removing computer programs.  Depending on your distribution (e.g., Arch Linux (pacman), macOS (brew), Debian (apt), common package managers include:
 
 ```
 apt
@@ -250,16 +293,28 @@ An alias assigns a syntax to a command.  For example, we can create an alias to 
 $ alias ll="ls -l"
 $ unalias ll
 ```
+
+The command `git status` is a frequent command and ideal for an alias.  For example, this can be the alias, 
+
+```zsh
+alias gst="git status"
+```
+
+
 ????  to list all aliases.  
 
-> Note: above alias is for ZSH.  
+> Note: The above alias is for ZSH. 
+  
+
+
+
 
 ## grep
 
-`grep` is a utility (short for "global regular expression print") that allows searching through any number of files for all lines that match a specifed string of characters or a pattern; it outputs any line that matches the string or pattern.  Typical use is when you cannot remember which file contains a certain piece of information.  
+`grep` is a utility (short for "global regular expression print") that allows searching through any number of files for all lines that match a specified string of characters or a pattern; it outputs any line that matches the string or pattern.  Typical use is when you cannot remember which file contains certain information.  
 
 __Example__
-The following command will searches all files in 'pathname' for the specified string.  
+The following command will search all files in 'pathname' for the specified string.  
 
 ```
 grep 'string' pathname
@@ -273,9 +328,9 @@ grep 'string' pathname
 
 ## Environment Variables
 
-Each shell has several important environment variables necessary for everyday use. Environment variables define certain things that enhance and customize each shell to your own taste. Some of the more important variables follow.
+Each shell has several important environmental variables that are necessary for everyday use. Environment variables define certain things that enhance and customize each shell to your taste. Some of the more important variables follow.
 
-`PATH` This variable contains a colon separated list of directories to use in searching for a command.
+`PATH` This variable contains a colon-separated list of directories to search for a command.
 
 `HOME` This variable contains your home directory.
 
@@ -292,7 +347,7 @@ ls -a $HOME
 
 
 ## Symbolic Link
-A symbolic link to a file in another directory (appeared in Version 1 AT&T UNIX).  That is, frequently you need to refer to a file in another directory. Do NOT copy this file to the directory, instead link to the file so as to have ONE copy (saves disk space and version control).
+A symbolic link to a file in another directory (appeared in Version 1 AT&T UNIX).  That is, frequently, you need to refer to a file in another directory. Do NOT copy this file to the directory; instead, link to the file to have ONE copy (saves disk space and version control).
 
 ```
 ln -s real_pathname .
@@ -307,7 +362,7 @@ ln -s source_file myfile
 
 
 **Example** 
-To create a symbolic link to an binary program, e.g., Julia.
+To create a symbolic link to a binary program, e.g., Julia.
 
 ```
 ln -s path/to/juila julia
@@ -325,13 +380,11 @@ ln -s path/to/juila julia
 1. Freedom to run the program for any purpose
 2. Freedom to study how the program works and adapt it by accessing the source code.
 3. Freedom to redistribute copies.
-4. Freedom to improve the program, release the improviements to the public.  
+4. Freedom to improve the program and release the improvements to the public.  
 
 
 # Linux
-In 1991, a second year Copmuter Science student at University of Helsinki, Linus Torvalds, wrote a kernel.
-
-
+In 1991, Linus Torvalds, a second-year Computer Science student at the University of Helsinki, wrote a kernel.
 
 
 
@@ -348,7 +401,7 @@ ping google.com
 ## Special Characters
 
 * `~` is the home directory
-* `.` is current directory
+* `.` is the current directory
 * `..` is the parent directory
 * `/` is a path directory separator
 * `#` is a comment
@@ -360,9 +413,14 @@ ping google.com
 * `|` pipe
 * `$` variable expression
 
+
+## Shell Scripting
+
+[Follow this link to the topic.](topics/scripting.md)
+
 ## Assignment Exercises
 
-This assignment covers the basics of using Unix shell commands to navigate directories, create, edit, copy, and delete files and directories. It also introduces the use of some commonly used commands such as `ls`, `cd`, `pwd`, `mkdir`, `touch`, `echo`, `cat`, `cp`, `rm`, and `rmdir`. Have fun exploring the power of Unix shell!
+This assignment covers the basics of using Unix shell commands to navigate directories and create, edit, copy, and delete files and directories. It also introduces some commonly used commands such as `ls`, `cd`, `pwd`, `mkdir`, `touch`, `echo`, `cat`, `cp`, `rm`, and `rmdir`. Have fun exploring the power of the Unix shell!
 
 1. Open a terminal window and navigate to your home directory.
 
@@ -376,20 +434,20 @@ This assignment covers the basics of using Unix shell commands to navigate direc
 
 6. Use the `mkdir` command to create a new directory named "mydir" in the current working directory.
 
-7. Use the `cd` command to navigate into the "mydir" directory.
+7. Use the `cd` command to navigate the "mydir" directory.
 
 8. Use the `touch` command to create a new file named "myfile.txt" in the "mydir" directory.
 
-9. Use the `echo` command to add some text to the "myfile.txt" file.
+9. Add text to the "myfile.txt" file using the `echo` command.
 
 10. Use the `cat` command to print the contents of the "myfile.txt" file to the terminal.
 
 11. Use the `cp` command to make a copy of the "myfile.txt" file in the same directory and name it "myfile_copy.txt".
 
-12. Use the `rm` command to delete the original "myfile.txt" file.
+12. Delete the original "myfile.txt" file using the `rm` command.
 
-13. Use the `ls` command to verify that only "myfile_copy.txt" is now present in the directory.
+13. Use the `ls` command to verify that only "myfile_copy.txt" is now in the directory.
 
-14. Use the `cd` command to navigate back to your home directory.
+14. Use the `cd` command to navigate your home directory.
 
 15. Use the `rmdir` command to delete the "mydir" directory and its contents.
