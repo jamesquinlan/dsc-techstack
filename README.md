@@ -24,7 +24,7 @@ After this course, students will be able to:
 * visualize and manipulate geometrical objects;
 * perform basic data wrangling using R;
 * consider data ethics issues;
-* differentiate and integrate functions unable to do by hand; 
+* differentiate and integrate functions unable to be done by hand; 
 * examine computer security and privacy issues.
 
 
@@ -52,9 +52,9 @@ After this course, students will be able to:
 
 ## Contributing guidelines
 
-All contributions are more than welcomed. Contributions may close an issue, fix a bug (reported or not reported), add new design blocks, improve the existing code, add new feature, and so on. In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation. [Read the full Code of Conduct](https://github.com/jamesquinlan/dsc-techstack/blob/main/CODE_OF_CONDUCT.md).
+All contributions are more than welcome. Contributions may close an issue, fix a bug (reported or not reported), add new design blocks, improve the existing code, add new features, and so on. In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity, and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation. [Read the full Code of Conduct](https://github.com/jamesquinlan/dsc-techstack/blob/main/CODE_OF_CONDUCT.md).
 
-The `dev` branch is the default and base branch for the project. It is used for development and all Pull Requests should go there.
+The `dev` branch is the project's default and base branch. It is used for development, and all Pull Requests should go there.
 
 
 
