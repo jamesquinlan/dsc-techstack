@@ -58,7 +58,101 @@ chmod 750 filename.
 
 
 
+## Summary Permissions Reference Tables
 
+
+
+| Octal | Binary | Permission | Description               |
+|-------|--------|------------|---------------------------|
+| 0     | 000    | ---        | No permissions            |
+| 1     | 001    | --x        | Execute only              |
+| 2     | 010    | -w-        | Write only                |
+| 3     | 011    | -wx        | Write and execute         |
+| 4     | 100    | r--        | Read only                 |
+| 5     | 101    | r-x        | Read and execute          |
+| 6     | 110    | rw-        | Read and write            |
+| 7     | 111    | rwx        | Read, write, and execute  |
+
+
+
+| Command      | Permissions          | Meaning                                       |
+|--------------|----------------------|-----------------------------------------------|
+| chmod 777    | rwxrwxrwx             | Full access for user, group, and others       |
+| chmod 755    | rwxr-xr-x             | User full; group and others can read & exec   |
+| chmod 700    | rwx------             | Full user access; no access for others        |
+| chmod 644    | rw-r--r--             | User can read/write; others read only         |
+| chmod 600    | rw-------             | User read/write; no one else has access       |
+
+
+
+
+
+| Permission | User (u) | Group (g) | Others (o) |
+|------------|----------|-----------|-------------|
+| Read (r)   |  4   	 |  4    	   |  4          |
+| Write (w)  |  2   	 |  2        |  2          |
+| Execute (x)|  1   	 |  1        |  1          |
+
+
+
+
+| Permission | User (u) | Group (g) | Others (o) |
+|------------|----------|-----------|-------------|
+| Read       | r (4)    | r (4)     | r (4)       |
+| Write      | w (2)    | w (2)     | w (2)       |
+| Execute    | x (1)    | x (1)     | x (1)       |
+
+
+
+
+
+| Octal | Symbolic | Meaning                          |
+|-------|----------|----------------------------------|
+| 700   | rwx------| Full access for user only        |
+| 755   | rwxr-xr-x| User full, others read & execute |
+| 644   | rw-r--r--| User read/write, others read     |
+| 600   | rw-------| User read/write only             |
+| 777   | rwxrwxrwx| Full access for everyone         |
+
+
+
+
+
+| Octal | Symbolic | Meaning                          |
+|-------|----------|----------------------------------|
+| 0     | ---      | No permissions                   |
+| 1     | --x      | Execute                          |
+| 2     | -w-      | Write                            |
+| 3     | -wx      | Write and execute                |
+| 4     | r--      | Read                             |
+| 5     | r-x      | Read and execute                 |
+| 6     | rw-      | Read and write                   |
+| 7     | rwx      | Read, write, execute             |
+
+
+
+| Symbol | Effect                 |
+|--------|------------------------|
+| +      | Adds permission        |
+| -      | Removes permission     |
+| =      | Sets exact permission  |
+
+
+
+| Command            | Meaning                                           |
+|--------------------|---------------------------------------------------|
+| chmod +x file      | Add execute permission for all (u/g/o)            |
+| chmod u+x file     | Add execute for user only                         |
+| chmod g-w file     | Remove write from group                           |
+| chmod o=r file     | Set read-only for others                          |
+| chmod a+x script.sh| Add execute to all for a script                   |
+| chmod 755 file     | User: rwx, Group/Others: r-x                      |
+| chmod 644 file     | User: rw-, Group/Others: r--                      |
+| chmod -R 755 dir/  | Recursively set rwxr-xr-x for all files/dirs     |
+
+
+
+> Scripts need `chmod +x script.sh` before running with `./script.sh`
 
 
 
