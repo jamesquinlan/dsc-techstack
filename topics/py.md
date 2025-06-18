@@ -7,25 +7,21 @@ This lesson plan covers the basics of Python programming, including installing P
 
 ## Lesson 1: Installing Python
 
-Explain what Python is and its benefits.
-
-Guide students on how to download and install Python on their computer.
 
 Verify that Python has been installed correctly using the python --version command.
 
 
 ## Lesson 2: Basic Data Types and Variables
 Introduce data types (integer, float, string, and Boolean).
-Explain variables and how they are used to store data.
-Demonstrate how to declare and assign variables in Python.
-Show how to print variables to the console using the print() function.
+Declare and assign variables in Python.
+Print variables to the console using the `print()` function.
 
 
 ## Lesson 3: Operators and Expressions
-Teach basic arithmetic operators (+, -, *, /, //, %).
-Teach comparison operators (==, !=, >, <, >=, <=).
-Teach logical operators (and, or, not).
-Show how to combine operators and variables to create expressions.
+Basic arithmetic operators (+, -, *, /, //, %).
+Comparison operators (==, !=, >, <, >=, <=).
+Logical operators (and, or, not).
+Combine operators and variables to create expressions.
 
 
 ## Lesson 4: Control Flow
@@ -41,22 +37,19 @@ Show how to return values from functions.
 
 
 ## Lesson 6: Lists and Dictionaries
-Introduce lists and dictionaries and their differences.
-Teach how to create and manipulate lists and dictionaries in Python.
-Demonstrate how to use list comprehension to create new lists.
+Lists and dictionaries and their differences.
+Create and manipulate lists and dictionaries in Python.
+Use list comprehension to create new lists.
 
 
 ## Lesson 7: Input and Output
-Teach how to get user input in Python.
-Explain how to read and write files in Python.
+Read and write files in Python.
 
 
 ## Lesson 8: Object-Oriented Programming (Optional)
-Introduce the concepts of classes and objects.
-Teach how to define and use classes in Python.
+Classes and objects.
+Define and use classes in Python.
 
 
 ## Lesson 9: Final Project
-Give students a final project to work on.
-Encourage students to use what they have learned to create a program that solves a specific problem.
-Allow time for students to work on their projects and offer assistance as needed.
+Create a program that solves a specific problem.
