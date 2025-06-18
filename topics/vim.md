@@ -6,7 +6,7 @@ VIM (Vi IMproved) is an open source lightweight, powerful, and popular (modal) t
 See: https://www.vim.org
 
 
-![VIM](../images/vim.png "VIM")
+![VIM](images/vim.png "VIM")
 
 
 ## Installation on Debian based Linux
