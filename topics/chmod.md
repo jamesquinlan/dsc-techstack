@@ -4,7 +4,7 @@
 This lesson covers using `chmod` to set file and directory permissions. Remember to use chmod carefully, as modifying permissions can have significant security implications.
 
 
-`chmod` is a command in Unix-based operating systems that allows users to change the permissions of a file or directory. The name "chmod" stands for "change mode," and it's a powerful tool for managing file permissions in a secure way.
+`chmod` is a command in Unix-based operating systems that allows users to change the permissions of a file or directory. The name "chmod" stands for "change mode," and it's a powerful tool for securely managing file permissions.
 
 There are three basic types of permissions for a file or directory:
 
@@ -53,7 +53,7 @@ Here's an example of how to use `chmod`:
 chmod 750 filename.
 ```
 
-5. Again, Use the `ls -l` command to verify that the permissions have been set correctly.
+5. Again, use the `ls -l` command to verify that the permissions have been set correctly.
 
 
 

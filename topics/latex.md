@@ -5,7 +5,7 @@ Author: Overleaf and other unknown authors.
 
 ## What is LaTeX?
 
-LaTeX (pronounced LAY-tek or LAH-tek) is a tool for creating documents with a professional appearance. It is based on the premise that you should just concentrate on the content of your text and that the computer will handle the formatting. Instead of spacing out text on a page to control formatting, as in Microsoft Word or LibreOffice Writer, users can simply type plain text and let LaTeX handle the rest.
+LaTeX (pronounced LAY-tek or LAH-tek) is a tool for creating documents with a professional appearance. It is based on the premise that you should concentrate on the content of your text and that the computer will handle the formatting. Instead of spacing out text on a page to control formatting, as in Microsoft Word or LibreOffice Writer, users can type plain text and let LaTeX handle the rest.
 Why learn LaTeX?
 
 
@@ -33,15 +33,15 @@ By indenting the first line of the paragraph, LaTeX has already taken care of a 
 
 
  
-The first line of code declares the type of document, the class. The class controls the overall appearance of the document. Different documents will require different classes, i.e., a CV/resume will require a different class than a scientific paper. In this case, the class is an article, the simplest and most common LaTeX class. Other documents you may be working on may require different classes, such as books or reports.
+The first line of code declares the type of document, the class. The class controls the overall appearance of the document. Different documents will require different classes; for example, a CV/resume will require a different class than a scientific paper. In this case, the class is an article, the simplest and most common LaTeX class. Other documents you may be working on may require different classes, such as books or reports.
 
 After this, you write the content of our document, enclosed inside the \begin{document} and \end{document} tags. This is known as the body of the document. You can start writing here and change the text if you wish. You have to compile the document to see the result of these changes in the PDF. To do this in Overleaf, hit Recompile. (You can also set your project to automatically recompile when you edit your files by clicking on the small arrow next to the 'Recompile button and set 'Auto Compile to 'On.)
 
-If you use a basic text editor such as gedit, emacs, vim, sublime, notepad, etc., you will have to compile the document manually. Run pdfLaTeX <your document> in your computer's terminal/command line to do this. See here for more information on how to do this.
+If you use a basic text editor, such as gedit, Emacs, Vim, Sublime, or Notepad, you will need to compile the document manually. Run pdfLaTeX <your document> in your computer's terminal/command line to do this. See here for more information on how to do this.
 
-If you use a dedicated LaTeX editor like TeXmaker or TeXworks, hit the Recompile button. Consult the program documentation if you are unsure where this is.
+If you use a dedicated LaTeX editor like TeXmaker or TeXworks, hit the Recompile button. Consult the program documentation if you are unsure where to find this information.
 
-Now that you have learned how to add content to our document, the next step is to give it a title. To do this, we must talk briefly about the preamble.
+Now that you have learned how to add content to our document, the next step is to give it a title. To accomplish this, we must briefly discuss the preamble.
 
 ## The preamble of a document
 The text was entered after the \begin{document} command in the previous example. Everything in your .tex file before this point is called the preamble. In the preamble, you define the type of document you are writing, the language you are writing in, the packages you would like to use (more on this later), and several other elements. For instance, a standard document preamble would look like this:
@@ -168,22 +168,22 @@ There's a picture of a galaxy above
 
 
 
-LaTeX can not manage images by itself, so you will need to use a package. Packages can be used to change the default look of your LaTeX document or to allow more functionalities. In this case, you need to include an image in our document, so you should use the `graphicx` package. This package gives new commands, `\includegraphics{...}` and `\graphicspath{...}`. To use the `graphicx` package, include the following line in your preamble: \usepackage{graphicx}
+LaTeX can not manage images by itself, so you will need to use a package. Packages can be used to change the default look of your LaTeX document or to allow more functionality. In this case, you need to include an image in your document, so you should use the `graphicx` package. This package gives new commands, `\includegraphics{...}` and `\graphicspath{...}`. To use the `graphicx` package, include the following line in your preamble: \usepackage{graphicx}
 
 The command \graphicspath{ {images/} } tells LaTeX that the images are kept in a folder named images under the current directory.
 
-The \includegraphics{universe} command is the one that actually included the image in the document. Here universe is the name of the file containing the image without the extension, then universe.PNG becomes the universe. The file name of the image should not contain white spaces or multiple dots.
+The \includegraphics{universe} command is the one that includes the image in the document. Here, the universe is the name of the file containing the image without the extension, then universe.PNG becomes the universe. The file name of the image should not contain white spaces or multiple dots.
 
-Note: The file extension is allowed to be included, but it's a good idea to omit it. If the file extension is omitted it will prompt LaTeX to search for all the supported formats. It is also usually recommended to use lowercase letters for the file extension when uploading image files. For more details see the section about generating high-resolution and low-resolution images.
-
-
+Note: The file extension is allowed to be included, but it's a good idea to omit it. If the file extension is omitted, it will prompt LaTeX to search for all the supported formats. It is also usually recommended to use lowercase letters for the file extension when uploading image files. For more details, see the section about generating high-resolution and low-resolution images.
 
 
 
 
 
-## Captions, labels and references
-Images can be captioned, labeled and referenced by means of the figure environment as shown below:
+
+
+## Captions, labels, and references
+Images can be captioned, labeled and referenced through the figure environment as shown below:
 
 ```latex
 \begin{figure}[h]
@@ -217,9 +217,9 @@ Note: If you are using captions and references on your own computer, you will ha
 
 
 ## Lists 
-Lists are very simple to create in LaTeX. You can create lists using different list environments. Environments are sections of our document that you want to present in a different way to the rest of the document. They start with a \begin{...} command and end with an \end{...} command.
+Lists are very simple to create in LaTeX. You can create lists using different list environments. Environments are sections of our document that you want to present differently from the rest of the document. They start with a \begin{...} command and end with an \end{...} command.
 
-There are two main different types of lists, ordered lists and unordered lists. Each will use a different environment.
+There are two main types of lists, ordered lists and unordered lists. Each will use a different environment.
 
 
 
@@ -250,7 +250,7 @@ Ordered lists have the same syntax inside a different environment. We make order
 ```
 
 
-As with unordered lists, each entry must be preceded by the control sequence `\item`, which will automatically generate the number labeling the item. The enumerate labels consist of sequential numbers starting at one.
+As with unordered lists, each entry must be preceded by the control sequence `\item`, which will automatically generate the number labeling the item. The enumerated labels consist of sequential numbers starting at one.
 
 
 
@@ -292,7 +292,7 @@ Einstein1.png
 
 To put your equations in inline mode use one of these delimiters: `\( ... \)`, `$ ... $` or `\begin{math} ... \end{math}`. They all work and the choice is a matter of taste.
 
-The displayed mode has two versions: numbered and unnumbered.
+The displayed mode is available in two versions: numbered and unnumbered.
 
 The mass-energy equivalence is described by the famous equation
 \[ E=mc^2 \]
@@ -311,9 +311,9 @@ To print your equations in display mode use one of these delimiters: `\[ ... \]`
 Important Note: equation* environment is provided by an external package, consult the `amsmath` article.
 
  
-Many math mode commands require the `amsmath` package, so be sure to include it when writing math. An example is shown below of some basic math mode commands.
+Many math mode commands require the `amsmath` package, so be sure to include it when writing math. An example of some basic math mode commands is shown below.
 
-Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined and nested to write expressions such as
+Subscripts in math mode are written as $a_b$, and superscripts are written as $a^b$. These can be combined and nested to write expressions such as
 
 `\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]`
  
@@ -321,13 +321,13 @@ We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are pl
 
 `\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]`
 
-Lowercase Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as `$\Omega$` `$\Delta$`.
+Lowercase Greek letters are written as $\omega$ $\delta$ etc., while uppercase Greek letters are written as `$\Omega$` `$\Delta$`.
 
 Mathematical operators are prefixed with a backslash as `$\sin(\beta)$`, `$\cos(\alpha)$`, `$\log(x)$` etc.
 
 
 ### Align
-Alternatively, there is an align environment for aligning say the equals sign, `=`, in a series of multiple equation lines.
+Alternatively, there is an align environment for aligning, say, the equals sign, `=`, in a series of multiple equation lines.
 
 ```latex
 \begin{align}
@@ -350,7 +350,7 @@ You can **suppress the equation numbers** using `*`, in particular,
 
 
 ## Abstracts
-In scientific documents, it's a common practice to include a brief overview of the main subject of the paper. In LaTeX there's an abstract environment for this. The abstract environment will put the text in a special format at the top of your document.
+In scientific documents, it's a common practice to include a brief overview of the main subject of the paper. In LaTeX, there's an abstract environment for this. The abstract environment will put the text in a special format at the top of your document.
 
 ```latex
 \begin{document}
@@ -386,13 +386,12 @@ This line will start a second Paragraph.
 
 
 
-When writing the contents of your document, if you need to start a new paragraph you must hit the "Enter" key twice (to insert a double blank line). Notice that LaTeX automatically indents paragraphs.
+When writing the contents of your document, if you need to start a new paragraph, you must hit the "Enter" key twice (to insert a double blank line). Notice that LaTeX automatically indents paragraphs.
 
-To start a new line without actually starting a new paragraph insert a break line point, this can be done by \\ (a double backslash as in the example) or the \newline command.
+To start a new line without actually starting a new paragraph, insert a break line point; this can be done by \\ (a double backslash as in the example) or the \newline command.
 
 Care should be taken that multiple \\ or \newlines are not used to "simulate" paragraphs with larger spacing between them, as this can interfere with LaTeX's typesetting algorithms. The recommended method to do so is to keep using double-blank lines to create new paragraphs without any \\, and then add \usepackage{parskip} to the preamble.
 
-You can find more information in the Paragraphs and new lines article.
 
 
 
@@ -400,7 +399,7 @@ You can find more information in the Paragraphs and new lines article.
 
 
 ## Chapters and Sections
-Commands to organize a document vary depending on the document type, the simplest form of organization is the sectioning, available in all formats.
+Commands to organize a document vary depending on the document type; the simplest form of organization is sectioning, available in all formats.
 
 ```latex
 \chapter{First Chapter}
@@ -430,7 +429,7 @@ Etiam lobortis facilisissem
 
 
 
-The command \section{} marks the beginning of a new section, inside the braces is set the title. Section numbering is automatic and can be disabled by including a * in the section command as `\section*{}`. We can also have `\subsection{}`s, and indeed `\subsubsection{}`s. The basic levels of depth are listed below:
+The command \section{} marks the beginning of a new section, and inside the braces is set the title. Section numbering is automatic and can be disabled by including a * in the section command as `\section*{}`. We can also have `\subsection{}`s, and indeed `\subsubsection{}`s. The basic levels of depth are listed below:
 
 ```latex
 -1  \part{part}
@@ -444,7 +443,7 @@ The command \section{} marks the beginning of a new section, inside the braces i
 
 Note that `\part` and `\chapter` are only available in report and book document classes.
 
-For a more complete discussion about the document structure see the article about sections and chapters.
+For a more complete discussion about the document structure, see the article about sections and chapters.
 
 
 
@@ -453,7 +452,7 @@ For a more complete discussion about the document structure see the article abou
 
 ## Tables
 Creating a simple table in LaTeX
-Below you can see the simplest working example of a table
+Below, you can see the simplest working example of a table
 
 ```latex
 \begin{center}
@@ -465,12 +464,12 @@ Below you can see the simplest working example of a table
 \end{center}
 ```
 
-The tabular environment is the default LaTeX method to create tables. You must specify a parameter to this environment, in this case {c c c}. This tells LaTeX that there will be three columns and that the text inside each one of them must be centered. You can also use r to align the text to the right and "l" for the left alignment. The alignment symbol `&` is used to specify the breaks in the table entries. There must always be one less alignment symbol in each line than the number of columns. To go to the next line of your table, we use the new line command \\. We wrap the entire table inside the center environment so that it will appear in the center of the page.
+The tabular environment is the default LaTeX method to create tables. You must specify a parameter to this environment, in this case {c c c}. This tells LaTeX that there will be three columns and that the text inside each one of them must be centered. You can also use r to align the text to the right and "l" for the left alignment. The alignment symbol `&` is used to specify the breaks in the table entries. There must always be one fewer alignment symbol in each line than the number of columns. To go to the next line of your table, we use the new line command \\. We wrap the entire table inside the center environment so that it will appear in the center of the page.
 
 
 
 ### Adding borders
-The tabular environment is more flexible, you can put separator lines in between each column.
+The tabular environment is more flexible; you can put separator lines between each column.
 
 ```latex
 \begin{center}
@@ -489,7 +488,7 @@ The tabular environment is more flexible, you can put separator lines in between
 
 You can add borders using the horizontal line command \hline and the vertical line parameter |.
 
-{ |c|c|c| }: This declares that three columns, separated by a vertical line, are going to be used in the table. The | symbol specifies that these columns should be separated by a vertical line.
+{ |c|c|c| }: This declares that three columns, separated by a vertical line, are going to be used in the table. The | symbol specifies that a vertical line should separate these columns.
 \hline: This will insert a horizontal line. We have included horizontal lines at the top and bottom of the table here. There is no restriction on the number of times you can use \hline.
 Below you can see a second example.
 
@@ -575,7 +574,7 @@ Note: If you are using captions and references on your own computer, you will ha
 
 
 ##  Table of Contents
-To create the table of contents is straightforward, the command `\tableofcontents` does all the work for you:
+Creating the table of contents is straightforward; the command `\tableofcontents` does all the work for you:
 
 ```latex
 \documentclass{article}

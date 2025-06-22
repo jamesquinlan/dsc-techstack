@@ -7,7 +7,7 @@ TechStack topics for computational (and data) scientists.  The list of topics (s
 
 ## Course description
 
-This course facilitates the development of proficiency with computational and data science tools. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include but are not limited to the command line, the use of text editors, and version control systems. Mastering such tools enables one to become more efficient at problem-solving and provides unique knowledge and skills.
+This course facilitates the development of proficiency with computational and data science tools. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include, but are not limited to, the command line, text editors, and version control systems. Mastering such tools enables one to become more efficient at problem-solving and provides unique knowledge and skills.
 
 
 
@@ -24,7 +24,7 @@ After this course, students will be able to:
 * visualize and manipulate geometrical objects;
 * perform basic data wrangling using R;
 * consider data ethics issues;
-* differentiate and integrate functions unable to be done by hand; 
+* differentiate and integrate functions that cannot be done by hand; 
 * examine computer security and privacy issues.
 
 
@@ -37,7 +37,6 @@ After this course, students will be able to:
 4. [Unix](topics/unix.md)
 5. [Scripting](topics/scripting.md)
 6. [File permissions](topics/chmod.md)
-7. [IDE (VSCode)](topics/vscode.md)
 8. [AWS](topics/aws.md)
 9. [LaTeX](topics/latex.md)
 10. [Data Ethics](topics/ethics.md)

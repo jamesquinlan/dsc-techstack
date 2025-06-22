@@ -1,15 +1,15 @@
 # Introduction to UNIX
 
-UNIX is a multiuser, multitasking operating system developed in the 1970s by Bell Labs.  Licensed in 1975, UC Berkeley made enhancements and called it BSD (Berkeley Software Distribution) and distributed it to universities.   
+UNIX is a multiuser, multitasking operating system developed in the 1970s by Bell Labs.  Licensed in 1975, UC Berkeley made enhancements and called it BSD (Berkeley Software Distribution), which it distributed to universities.   
 
 
 ## UNIX philosophies
 
 * Do one thing and do it well - Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
-* Everything is file - Ease of use and security is offered by treating hardware as a file.
-* Store data and configuration in flat text files - Text file is a universal interface. Easy to create, backup and move to another system.
-* Use shell scripts to increase leverage and portability - Use shell script to automate common tasks across various UNIX / Linux installations.
-* Chain programs together to complete complex task - Use shell pipes and filters to chain small utilities that perform one task at time.
+* Everything is file - Ease of use and security are offered by treating hardware as a file.
+* Store data and configuration in flat text files - Text file is a universal interface. Easy to create, backup, and move to another system.
+* Use shell scripts to increase leverage and portability - Use shell scripts to automate common tasks across various UNIX / Linux installations.
+* Chain programs together to complete a complex task - Use shell pipes and filters to chain small utilities that perform one task at a time.
 * Choose portability over efficiency.
 * Keep it Simple.
 
@@ -34,13 +34,13 @@ The __file__ is the unit of storage in UNIX.  A __directory__ (_folder_ in moder
 
 # The Unix Shell
 
-The shell is a command line interface (CLI)  with the UNIX system — the middleman between you and the kernel. It accepts a command, interprets the command, executes the command, and then waits for another command. The shell displays a prompt to notify you that it is ready to accept your command. This prompt in the shell window  looks something like: 
+The shell is a command-line interface (CLI) with the UNIX system — the middleman between you and the kernel. It accepts a command, interprets the command, executes the command, and then waits for another command. The shell displays a prompt to notify you that it is ready to accept your command. This prompt in the shell window  looks something like: 
 
 
 ![zsh Terminal Window](images/shell.png)
 
 
-There are several shell renditions starting with the (Ken) Thompson shell, the first shell Bell Laboratories (1971).  Others include Bourne shell (__sh__), C shell (__csh__), and Korn shell (__ksh__).  Two very popular shells are the Bourne _Again_ Shell (__bash__) and the Z shell (__zsh__).  
+There are several shell renditions starting with the (Ken) Thompson shell, the first shell from Bell Laboratories (1971).  Others include Bourne shell (__sh__), C shell (__csh__), and Korn shell (__ksh__).  Two very popular shells are the Bourne _Again_ Shell (__bash__) and the Z shell (__zsh__).  
 
 Although most shell commands are the same, there are some differences.  The commands presented below assume the Z-shell.  
 
@@ -95,7 +95,7 @@ $ ls [options] [names]
 | -d	|   Displays only directories | 
 | -f    | Interprets each name as a directory, not a file|
 | -F	| Flags filenames |
-| -g	| Displays the long format listing, but exclude the owner name|
+| -g	| Displays the long format listing, but excludes the owner name|
 | -i	| Displays the inode for each file|
 | -l	| Displays the long format listing|
 | -L	| Displays the file or directory referenced by a symbolic link|
@@ -184,7 +184,7 @@ $ mv chap*.pdf Directory/
 
 
 
----
+--
 
 
 ## Permissions
@@ -252,14 +252,14 @@ $ unalias ll
 ```
 ????  to list all aliases.  
 
-> Note: above alias is for ZSH.  
+> Note: the above alias is for ZSH.  
 
 ## grep
 
-`grep` is a utility (short for "global regular expression print") that allows searching through any number of files for all lines that match a specifed string of characters or a pattern; it outputs any line that matches the string or pattern.  Typical use is when you cannot remember which file contains a certain piece of information.  
+`grep` is a utility (short for "global regular expression print") that allows searching through any number of files for all lines that match a specified string of characters or a pattern; it outputs any line that matches the string or pattern.  Typical use is when you cannot remember which file contains a certain piece of information.  
 
 __Example__
-The following command will searches all files in 'pathname' for the specified string.  
+The following command will search all files in 'pathname' for the specified string.  
 
 ```
 grep 'string' pathname
@@ -273,9 +273,9 @@ grep 'string' pathname
 
 ## Environment Variables
 
-Each shell has several important environment variables necessary for everyday use. Environment variables define certain things that enhance and customize each shell to your own taste. Some of the more important variables follow.
+Each shell has several important environment variables necessary for everyday use. Environment variables define certain things that enhance and customize each shell to your taste. Some of the more important variables follow.
 
-`PATH` This variable contains a colon separated list of directories to use in searching for a command.
+`PATH` This variable contains a colon-separated list of directories to use in searching for a command.
 
 `HOME` This variable contains your home directory.
 
@@ -292,13 +292,13 @@ ls -a $HOME
 
 
 ## Symbolic Link
-A symbolic link to a file in another directory (appeared in Version 1 AT&T UNIX).  That is, frequently you need to refer to a file in another directory. Do NOT copy this file to the directory, instead link to the file so as to have ONE copy (saves disk space and version control).
+A symbolic link to a file in another directory (appeared in Version 1 AT&T UNIX).  That is, frequently, you need to refer to a file in another directory. Do NOT copy this file to the directory; instead, link to the file to have ONE copy (saves disk space and version control).
 
 ```
 ln -s real_pathname .
 ```
 
-> Note that the “.” means to use the same filename in the local directory. You can use a different name by typing
+> Note that the “.” means to use the same filename in the local directory. You can use a different name by typing.
 
 ```
 ln -s real_pathname local_filename
@@ -307,7 +307,7 @@ ln -s source_file myfile
 
 
 **Example** 
-To create a symbolic link to an binary program, e.g., Julia.
+To create a symbolic link to a binary program, e.g., Julia.
 
 ```
 ln -s path/to/juila julia
@@ -325,14 +325,11 @@ ln -s path/to/juila julia
 1. Freedom to run the program for any purpose
 2. Freedom to study how the program works and adapt it by accessing the source code.
 3. Freedom to redistribute copies.
-4. Freedom to improve the program, release the improviements to the public.  
+4. Freedom to improve the program and release the improvements to the public.  
 
 
 # Linux
-In 1991, a second year Copmuter Science student at University of Helsinki, Linus Torvalds, wrote a kernel.
-
-
-
+In 1991, Linus Torvalds, a second-year Computer Science student at the University of Helsinki, wrote a kernel.
 
 
 Other useful commands
@@ -348,7 +345,7 @@ ping google.com
 ## Special Characters
 
 * `~` is the home directory
-* `.` is current directory
+* `.` is the current directory
 * `..` is the parent directory
 * `/` is a path directory separator
 * `#` is a comment
@@ -362,7 +359,7 @@ ping google.com
 
 ## Assignment Exercises
 
-This assignment covers the basics of using Unix shell commands to navigate directories, create, edit, copy, and delete files and directories. It also introduces the use of some commonly used commands such as `ls`, `cd`, `pwd`, `mkdir`, `touch`, `echo`, `cat`, `cp`, `rm`, and `rmdir`. Have fun exploring the power of Unix shell!
+This assignment covers the basics of using Unix shell commands to navigate directories, create, edit, copy, and delete files and directories. It also introduces the use of some commonly used commands such as `ls`, `cd`, `pwd`, `mkdir`, `touch`, `echo`, `cat`, `cp`, `rm`, and `rmdir`. Have fun exploring the power of the Unix shell!
 
 1. Open a terminal window and navigate to your home directory.
 

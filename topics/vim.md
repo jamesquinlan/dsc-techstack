@@ -1,32 +1,33 @@
 # VIM
 
-VIM (Vi IMproved) is an open source lightweight, powerful, and popular (modal) text editor available for Debian based Linux, RPM based Linux, and Windows.  (Note: MacOS is BSD distro - Debian based).  Other editors include ```vi```, ```nano```, ```pico```, ```emacs```, ```nvi```, ```elvis```, ... .  
+VIM (Vi IMproved) is an open source, lightweight, powerful, and popular (modal) text editor available for Debian-based Linux, RPM-based Linux, and Windows.  (Note: MacOS is a BSD distro - Debian based).  Other editors include `vi`, `nano`, `pico`, `emacs`, `nvi`, `elvis`, ... .
 
-
-See: https://www.vim.org
-
+See: [https://www.vim.org](https://www.vim.org)
 
 ![VIM](images/vim.png "VIM")
 
+## Installation on Debian-based Linux
 
-## Installation on Debian based Linux
+First, check to see if Vim is already installed.
 
-First check to see if vim is already installed.  
-``` 
+```
 $ which vim
 ```
-If already installed, you will see the the path displayed, for example:
+
+If already installed, you will see the path displayed, for example:
+
 ```
 /usr/bin/vim
 ```
-If ```vim``` not found, install it by typing the following commands at the command prompt: 
+
+If `VIM` is not found, install it by typing the following commands at the command prompt:
 
 ```
-$ sudo apt-get update 
+$ sudo apt-get update
 $ sudo apt-get install vim
 ```
 
-To ensure Vim is correctly installed execute below command −
+To ensure Vim is correctly installed, execute the following command −
 
 ```
 $ which vim
@@ -34,95 +35,84 @@ $ which vim
 
 Or `yum install vim` with yum.
 
-
-
-
-
-
-
 # Vim modes
 
 Vim is a modal editor.  Keystrokes have different results based on the mode.  The modes are:
 
-1. __Normal__: navigate file and make edits
-2. __Inssert__: for inserting text
-3. __Replace__: for replacing text
-4. __Visual__ (plain, line, or block): select text
-5. __Command__: run commands
+1. **Normal**: navigate the file and make edits
+2. **Insert**: for inserting text
+3. **Replace**: for replacing text
+4. **Visual** (plain, line, or block): select text
+5. **Command**: run commands
 
 The mode is displayed in the bottom left corner (unless in normal mode).
 
-
 ## Normal Mode
 
-You should be in normal mode most of the time. To enter normal mode, press the ```ESC``` key (from any mode).
+You should be in normal mode most of the time. To enter normal mode, press the `ESC` key (from any mode).
 
-#### Movements in normal mode
+### Movements in normal mode
 
-- ```hjkl``` (left, down, up, right)
-- words: ```w``` (next word), ```b``` (beginning of word), ```e``` (end of word)
-- Lines: ```0``` (beginning of line), ```^``` (first non-blank character), ```$``` (end of line)
-- Screen: ```H``` (top of screen), ```M``` (middle of screen), ```L``` (bottom of screen)
-- Scroll: ```^u``` (up), ```^d``` (down)
-- File: ```gg``` (beginning of file), ```G``` (end of file)
-- Line numbers: ```:{number}<CR>``` or ```{number}G``` (line {number})
-- Misc: ```%``` (corresponding item)
-- Find: ```f{character}```, ```t{character}```, ```F{character}```, ```T{character}```
-	- find/to forward/backward {character} on the current line
-	- `,` / `;` for navigating matches
-- Search: ```/{regex}```, ```n``` / ```N``` for navigating matches
+* `hjkl` (left, down, up, right)
+* words: `w` (next word), `b` (beginning of word), `e` (end of word)
+* Lines: `0` (beginning of line), `^` (first non-blank character), `$` (end of line)
+* Screen: `H` (top of screen), `M` (middle of screen), `L` (bottom of screen)
+* Scroll: `^u` (up), `^d` (down)
+* File: `gg` (beginning of file), `G` (end of file)
+* Line numbers: `:{number}<CR>` or `{number}G` (line {number})
+* Misc: `%` (corresponding item)
+* Find: `f{character}`, `t{character}`, `F{character}`, `T{character}`
 
+  * find/to forward/backward {character} on the current line
+  * `,` / `;` for navigating matches
+* Search: `/{regex}`, `n` / `N` for navigating matches
 
+## Insert mode
 
-### Insert mode
-Used to enter and edit text.  The current mode is shown at the bottom left corner of the window.   To switch from default command to insert mode press ```i``` key. 
- 
+Used to enter and edit text.  The current mode is shown at the bottom left corner of the window. To switch from default command to insert mode, press the `i` key.
 
-To exit insert mode, use the escape key, ```esc```.  
+To exit insert mode, use the escape key, `esc`.
 
+## Command mode
 
-### Command mode
+The default mode. Commands include those in this mode, such as copy, paste, delete, and replace. Vim commands without a colon are executed in command mode.
+Enter command mode with `:` from Normal mode. Functionalities in this mode include opening, saving, and closing files. Common commands in this mode include:
 
-The default mode.  Commands include commands in this mode like copy, paste, delete, replace, etc.  Vim commands without a colon are executed in command mode.
-Enter command mode with ```:``` from Normal mode.  Functionalities in this mode include opening, saving, and closing files.  Common commands in this mode include:
-- ```:q``` quit and close window
-- ```:w``` save (write) buffer
-- ```:wq``` save and quit
-- ```:e {filename}``` open file to edit
-- ```:ls``` list/show open buffers
-- ```:help {topic}```
-	- ```:help :w``` opens help on the command ```:w```
-	- ```:help w``` opens help on ```w``` movement
+* `:q` quit and close the window
+* `:w` save (write) buffer
+* `:wq` save and quit
+* `:e {filename}` open file to edit
+* `:ls` list/show open buffers
+* `:help {topic}`
 
+  * `:help :w` opens help on the command `:w`
+  * `:help w` opens help on `w` movement
 
+To write to the buffer:
 
-To write to buffer:
 ```
 :w
 ```
 
+To quit vim:
 
-To quit vim, 
 ```
 :q
 ```
 
-
-
-To quit without saving changes, type:
+To quit without saving changes:
 
 ```
 :q!
 ```
 
+Save changes and quit the editor with:
 
-Save changes and quit editor with the  command: 
 ```
 :wq
 ```
 
 ## Help
-Help is a command, but deserves its own subsection heading. 
 
 ```
 :help
@@ -130,188 +120,161 @@ Help is a command, but deserves its own subsection heading.
 :help modes
 ```
 
-| Command   | Meaning                     |
-|-----------|-----------------------------|
-| ```i```   | insert                      |
-| ```o```   | newline below (insert mode) |
-| ```O```   | newline above               |
-| ```d```   | delete                      |
-| ```dw```  | delete word                 |
-| ```u```   | undo                        |
-| ```y```   | yank, copy                  |
-| ```p```   | paste                       |
-| ```yy```  | copy line                   |
-| ```yw```  | copy word                   |
-| ```fo```  | find "o"                    |
-| ```.```   | repeats last command        |
-| ```4j```  | down 4 lines                |
-| ```c2w``` | change 2 words              |
-| ```2dw``` | delete 2 words              |
+| Command | Meaning                     |
+| ------- | --------------------------- |
+| `i`     | insert                      |
+| `o`     | newline below (insert mode) |
+| `O`     | newline above               |
+| `d`     | delete                      |
+| `dw`    | delete word                 |
+| `u`     | undo                        |
+| `y`     | yank, copy                  |
+| `p`     | paste                       |
+| `yy`    | copy line                   |
+| `yw`    | copy word                   |
+| `fo`    | find "o"                    |
+| `.`     | repeats last command        |
+| `4j`    | down 4 lines                |
+| `c2w`   | change 2 words              |
+| `2dw`   | delete 2 words              |
 
+## Copying, Cutting, and Pasting in Vim (Normal and Visual Mode)
 
+When working with text files, copying, cutting, and pasting are among the most commonly performed tasks. Vim uses specific terminology:
 
+* Yank (`y`) for copy
+* Delete (`d`) for cut
+* Put (`p`) for paste
+
+### In Normal Mode
+
+#### Copying (Yanking)
+
+* `yy`: yank the current line
+* `3yy`: yank 3 lines from the cursor
+* `y$`: yank from cursor to end of line
+* `y^`: yank from cursor to start of line
+* `yw`: yank to next word
+* `yiw`: yank current word
+* `y%`: yank to matching character (`()`, `{}`, `[]`)
+
+#### Cutting (Deleting)
+
+* `dd`: delete current line
+* `3dd`: delete 3 lines
+* `d$`: delete from cursor to end of line
+* `dw`: delete to next word
+* `d^`: delete to start of line
+
+#### Pasting (Putting)
+
+* `p`: paste after the cursor
+* `P`: paste before the cursor
+
+### In Visual Mode
+
+1. Move cursor to start of selection
+2. Enter visual mode:
+
+   * `v`: character selection
+   * `V`: line selection
+   * `Ctrl+v`: block (column) selection
+3. Move to end of selection
+4. Press `y` to copy or `d` to cut
+5. Move to destination and press `p` or `P` to paste
 
 ## Selection Mode
 
+## Essential Vi Commands
 
-# Essential Vi Commands
 Open a file:
+
 ```
 vi filename
 ```
 
+To go into edit mode: press ESC and type `i`
 
-To go into edit mode: press ESC and type I
+To go into command mode: press `ESC`
 
+To save a file:
 
-To go into command mode: press ```ESC```
-
-To save a file, press `ESC` and type 
 ```
 :w fileName
 ```
 
-To save a file and quit: press ESC and type
+To save and quit:
+
 ```
 :wq
 ```
 
-OR
-
-press ESC and type `:x`
-
-
 To jump to a line:
-press ESC and type `:the_line_number`
-
-
-
-
-To Search for a string:
-Press ESC and type `/wordToSearch`
-
-
-
-To quit vi:
-Press ESC and type :q
-Save the following into a file called hello.sh:
-
-
-
-
-
-
-
-
-## Help
 
 ```
-:help
-:help [topic]
-:help modes
+:{line_number}
 ```
 
+To search for a string:
 
+```
+/wordToSearch
+```
 
-## Copy, Cut, and Paste
+To quit:
 
-https://linuxize.com/post/how-to-copy-cut-paste-in-vim/
+```
+:q
+```
 
+## Encryption
 
-
-
-# Encryption
 ```
 vi /pathtofile/MyFile.txt
 ```
 
-Press the ‘Enter’ key. The contents of your file should appear in the terminal window.
-
-
-
-Before you enter any Vim command, you should make sure that you’re not in insert mode, so press the `Escape` key – if you were in insert mode, then you’re now in command mode.
-
-Now, enter:
+Then press:
 
 ```
 :X
 ```
 
-Vim is *case-sensitive*, so the `X` must be capitalized.
+Enter and confirm password, then save:
 
-Vim will then ask you to create an encryption key, which is essentially the password you'll use to encrypt and decrypt this text file. If you forget this key, then you'll be unable to access your file's contents, so make sure you use something memorable!
-
-Type your encryption key/password, then press the `Enter` key on your keyboard – rinse and repeat to confirm that this is the encryption key you want to use.
-
-This password isn't applied to your file until you save it, so now's a good time to save your changes by running the following command:
 ```
 :wq
 ```
 
-That's it – the file is encrypted!
+### Accessing an encrypted file
 
-If a potential snooper tries to open this file using a regular text-editing app, they'll get an error message. If they try to access this file in Vim using the wrong encryption key, they'll see nothing but scrambled letters, symbols, and numbers.
+Vim will prompt for the password.
 
-Accessing an encrypted file
+### Remove encryption
 
-If at some point you need to view or edit a Vim-encrypted file, then you have two options:
+1. Open the encrypted file
+2. Press `:X`, hit `Enter` twice to remove password
+3. Save with `:wq`
 
-Open this file in Vim
-Vim automatically checks whether a file is encrypted, so if you try to access it through Vim (using the vi filepath/filename command), it'll prompt you to enter your encryption key. Once you've entered your key, the file's contents will appear in the Terminal, ready for you to view and edit.
+### Change encryption key
 
-# Remove encryption
-To remove encryption from a file:
+1. Open the file
+2. Use `:X` to enter a new key
+3. Save with `:wq`
 
-Open the file in Vim (again, using the `vi filepath/filename` command).
-Enter your encryption key when prompted.
-Enter the following command:
+## Customizing Vim
+
+Vim is customized via `~/.vimrc`
+
+## Advanced Vim
+
+* Extend Vim with plugins
+* Use multiple windows:
+
 ```
-:X
-```
-
-When Vim prompts you to create a new encryption key, press the `Enter` key twice.
-Save your changes:
-```
-:wq
-```
-
-You'll now be able to open this file in your regular text-editing application.
-
-# Change the encryption key
-
-To change the encryption key associated with the file:
-
-Open the file in Vim.
-Enter your password when prompted.
-Run the following command:
-```
-:X
+:sp / :vsp
 ```
 
-Type new password then hit the `Enter`.
-Save the changes with the command  `:wq`.
-
-
-
-
-# Customizing Vim
-
-Vim is customized in the configuration file: ```~/.vimrc```.
-
-
-
-# Advanced Vim
-
-- Extend Vim with plugins
-- Use multiple windows
-```
-:sp / :vsp  # to split windows
-```
-
-
-
-
-# Practice Text
+## Practice Text
 
 ```
 def fizz_buzz(limit):
@@ -327,55 +290,36 @@ def main():
     fizz_buzz(10)
 ```
 
-
 ```
-The Apple Cat // modem is by far the most expandable modem on the market today.	Of course it's also the choice modem of pirates because of it's
-inexpensive half-duplex 1200 baud capabilities.  The expansion module available
-for the cat has several very useful functions.	Rather than shelling out $30
-bucks for one which you may only use a few of the features this file tells you
-how to build just certain features or even the whole package.
-
-   First off you'll need some basic knowledge and tools.  As for the knowledge
-you'll need to know how to solder pretty well, you'll also proabibly have to
-know DC from Hz and +12V from RS232.  Ok now, If you can handle that that,
-you'll need these tools:
+The Apple Cat // modem is by far the most expandable modem on the market today...
 ```
-
-
-
-
 
 ## Assignment Exercises
 
-This assignment covers some basic Vim commands and features, including searching, visual mode, cut and paste, saving and exiting, undo and redo, and replacing text. Good luck with your practice!
-
-
 1. Fix the following in [fizz buzz](https://en.wikipedia.org/wiki/Fizz_buzz):
 
-- Main is never called
-- Starts at 0 instead of 1
-- Prints 'fizz' and 'buzz' on separate lines for multiples of 15
-- Prints 'fizz' for multiples of 5
-- Hard-codes 10 instead of taking a command-line argument
-
+   * Main is never called
+   * Starts at 0 instead of 1
+   * Prints 'fizz' and 'buzz' on separate lines for multiples of 15
+   * Prints 'fizz' for multiples of 5
+   * Hard-codes 10 instead of taking a command-line argument
 
 2. Open a new file in Vim.
 
-3. Write some text in the file (it can be anything you like).
+3. Write some text.
 
-4. Use the search feature to find a specific word or phrase in the text.
+4. Search for a word.
 
-5. Use the visual mode to select a block of text.
+5. Use visual mode to select text.
 
-6. Cut the selected text and paste it somewhere else in the file.
+6. Cut and paste text.
 
-7. Save the file and exit Vim.
+7. Save and exit.
 
-8. Open the file again and make some changes to the text.
+8. Reopen and make changes.
 
-9. Use the undo and redo features to undo and redo your changes.
+9. Use undo/redo.
 
-10. Use the replace feature to replace a word or phrase with something else.
+10. Replace a word.
 
-11. Save the file and exit Vim.
-
+11. Save and exit.
