@@ -1,5 +1,13 @@
 # DSC-TECHSTACK
 
+![License](https://img.shields.io/github/license/jamesquinlan/dsc-techstack)
+![Course Materials](https://img.shields.io/badge/Content-Course%20Materials-blue)
+![Undergraduate](https://img.shields.io/badge/Level-Undergraduate-orange)
+![STEM Education](https://img.shields.io/badge/STEM-Education-purple)
+![Open Educational Resource](https://img.shields.io/badge/OER-Open%20Educational%20Resource-green)
+
+
+
 TechStack topics for computational (and data) scientists.  The list of topics (see topics folder) is incomplete.  The course was inspired by (i) a summer course run by [Dr. Ed Overman at Ohio State University](https://math.osu.edu/people/overman.2) and (ii) [MIT - The Missing Semester](https://missing.csail.mit.edu).
 
 
