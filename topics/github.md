@@ -1,16 +1,14 @@
 
 # Introduction to GitHub
 
+<!-- https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git -->
 
-
-GitHub is a cloud-based hosting platform for Git repositories.  Git can be used independently of Github (or competitive platforms such as Bitbucket).  Hosting repositories allows collaboration and provides cloud backups of your code.
-
-GitHub is the largest host for Git repositories and serves as the central point of collaboration for millions of developers and projects. Many Git repositories are hosted on GitHub, and numerous open-source projects utilize it for Git hosting, issue tracking, code review, and other purposes.
+GitHub is a cloud-based hosting platform for Git repositories.  Git can be used independently of GitHub (or competitive platforms such as Bitbucket).  Hosting repositories allows collaboration and provides cloud backups of your code.
 
 
 
 - **Git is the version control system, the tool that tracks changes to our files over time**
-- **Github is a hosting service for projects that use Git.**
+- **GitHub is a hosting service for projects that use Git.**
 
 It is essential to familiarize yourself with Git first. 
 
@@ -19,7 +17,7 @@ Check out Colt Steele's **Learn Git In 15 Minutes** tutorial [**here**](https://
 
 Documentation can be found directly on the GitHub website: [get started](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git).
 
-Git keeps track of changes to the source code by storing it in a (local) *repository*. With Github, a local repository can be uploaded to a remote cloud-based hosting repository. In addition, we have access to any public repositories created by other developers.
+Git keeps track of changes to the source code by storing it in a (local) *repository*. With GitHub, a local repository can be uploaded to a remote cloud-based hosting repository. In addition, we have access to any public repositories created by other developers.
 
 GitHub also allows users to follow, rate, and collaborate with other developers.  Multiple contributors are allowed in each repository (repo for short). 
 
@@ -87,7 +85,7 @@ After choosing the **Free** plan, click the **'Continue'** button to go to the n
 
 
 
-#### **Step 3: Setup your profile**
+#### **Step 3: Set up your profile**
 
 Building a profile is an optional step, but it can be valuable in the long run.  Your profile can be developed over time.  
 
@@ -144,11 +142,11 @@ An empty Git repository is now initialized.
 
 - **Step 2: Adding a new file to our Git repository**
 
-Create a new file in your project folder, we will call our sample file `hello.js`
+Create a new file in your project folder. We will call our sample file `hello.js`
 
 You can use the graphical interface of your operating system to create the file, or use the following terminal commands:
 
-> Windows Powershell: `ni hello.js`
+> Windows PowerShell: `ni hello.js`
 Bash (Mac/Linux) terminal: `touch hello.js`
 
 You can open the `hello.js` file with your text editor, and write the following JavaScript code which prints **Hello World!** to the console:
@@ -216,7 +214,7 @@ If you wanted, you could initialize the repository with a **README** file, which
 ### Create a new repository on the command line (Local to remote initialization)
 
 
-Add a new repository in GitHub and then in the folder on your computer that you want to upload to GitHub run the following commands (changing my_username and my_project to your situation):
+Add a new repository in GitHub and then in the folder on your computer that you want to upload to GitHub, run the following commands (changing my_username and my_project to your situation):
 
 
 
@@ -248,7 +246,7 @@ git push -u origin main
 After the last step, you will be forwarded to the starting page of your new GitHub repository.
 
 
-Since we've already created our Git repo locally, we can focus on the **`…or push an existing repository from the page's command line`** section.
+Since we've already created our Git repo locally, we can focus on the **or push an existing repository from the page's command line** section.
 
 If we didn't already have a local repository created, then we would follow the first set of commands to create a local repository from the remote GitHub one that was just created.
 
@@ -353,7 +351,7 @@ git clone <github-repo-link>
 
 That will create a new folder with the remote GitHub repository name and download all the project files and repository data into it. You can then change directories (**cd**) into that folder and normally continue working on the project, as we learned in the previous example.
 
-You can also clone public GitHub repositories from other developers using the same steps where you first find a copy of the repository URL and then use it in the **git clone** terminal command.
+You can also clone public GitHub repositories from other developers using the same steps, where you first find a copy of the repository URL and then use it in the **git clone** terminal command.
 
 
 
@@ -526,7 +524,7 @@ If you are looking to contribute to a project, you can create new *pull requests
 
 There is a sample repository called *Spoon-Knife* hosted by GitHub, which they created for testing purposes: [https://github.com/octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife)
 
-We will be using this repository to test the **Fork** feature of GitHub. Go to the repository page by following the link above and click the '**Fork'** button.
+We will be using this repository to test the **Fork** feature of GitHub. Go to the repository page by following the link above and clicking the '**Fork'** button.
 
 
 When the process is finished, you will be taken to your copy of the *Spoon-Knife* project repository. This forked repository will be tied to your GitHub account and won't affect the original repository. To get a local version of the forked repository, you can follow the same *cloning* ****procedure that we already covered.
