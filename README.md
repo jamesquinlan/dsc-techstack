@@ -12,11 +12,9 @@ TechStack topics for computational (and data) scientists.  The list of topics (s
 
 
 
-
 ## Course description
 
 This course facilitates the development of proficiency with computational and data science tools. Critical elements of the computing ecosystem that could make workflows smoother and easier are covered. These topics include, but are not limited to, the command line, text editors, and version control systems. Mastering such tools enables one to become more efficient at problem-solving and provides unique knowledge and skills.
-
 
 
 
