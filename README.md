@@ -41,7 +41,7 @@ After this course, students will be able to:
 1. [VIM](topics/vim.md)
 2. [Git](topics/git.md)
 3. [Virtualization](topics/vm.md)
-4. [Unix](topics/unix.md)
+4. [Unix](topics/shell.md)
 5. [Scripting](topics/scripting.md)
 6. [File permissions](topics/chmod.md)
 8. [AWS](topics/aws.md)
